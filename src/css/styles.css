@@ -48,3 +48,19 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+
+/* Загальні стилі для таблету */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+/* Загальні стилі для десктопу */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

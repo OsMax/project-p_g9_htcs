@@ -16,7 +16,7 @@
 
   // слухачі для кнопок Order
   order.openOrderBtn.addEventListener('click', toggleOrder);
-  order.openOrderBtn.addEventListener('click', toggleOrder);
+  order.closeOrderBtn.addEventListener('click', toggleOrder);
   // слухачі для кнопок Send
   send.openSendBtn.addEventListener('click', toggleSend);
   send.closeSendBtn.addEventListener('click', toggleSend);

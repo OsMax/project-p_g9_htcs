@@ -31,3 +31,20 @@
   --follow-in-line: 1;
   --fruits-in-line: 1;
 }
+
+/* Загальний стилі для СПИСКІВ */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* Загальний стилі для ЛІНКІВ */
+.link {
+  text-decoration: none;
+}
+/* Загальний стилі для КОНТЕЙНЕРІВ (мобільна версія) */
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

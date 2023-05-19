@@ -23,6 +23,7 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-red);
+  text-transform: uppercase;
   box-shadow: 0px 4px 70px 0px #0000001a;
   width: 80px;
   height: 80px;
@@ -31,6 +32,8 @@
   margin-left: auto;
   border: none;
   margin-bottom: 44px;
+  transform: rotate(345deg);
+  /* transform: translateX(148px) translateY(610px); */
 }
 .hero-text {
   font-family: DM Sans;

@@ -15,7 +15,7 @@
 
 }
 
-/* стилі для кнопки */
+/* стилі для кнопкиИ */
 @import url('./styles.css');
 
 .order-button{
@@ -29,7 +29,12 @@
     border: none;
  
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    -webkit-animation: heartbeat 5s steps(5, start) 2s infinite ;
+	        animation: heartbeat 5s steps(5, start) 2s infinite ;
 }
+
+
 
 .order-button:hover,
 .order-button:focus{
@@ -165,7 +170,10 @@
     justify-content: center;
     align-items: center;
   
+    
 }
+
+
 
  /* картинки с корзинками */
  .order-item{
@@ -305,7 +313,7 @@
      opacity: 0.5;
      padding: 14px 24px;
      margin-bottom: 20px;
-
+     resize: none;
 }
 
 .order-submit{
@@ -314,6 +322,7 @@
     border-radius: 100px;
     border: none;
     background-color: var(--color-green);
+
 }
 
 .img-girl-banana{
@@ -329,3 +338,75 @@
     line-height: 1.2;
     letter-spacing: -0.04em;
 }
+
+
+/* анимация для кнопки order */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+

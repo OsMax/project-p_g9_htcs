@@ -1,0 +1,95 @@
+<div class="backdrop is-hidden" id="backdrop">
+  <div class="order-modal is-hidden" id="modal-order">
+    
+      <h3 class="order-text">YOUR ORDER</h3>
+       <!-- кнопка-крестик -->
+      <button class="order-btn-close" id="order-close" >
+        <svg class="icon-modal" width="28" height="28">
+        <use href="../img/sprite.svg#icon-close-red"></use>
+        </svg>
+      </button>
+
+      <!-- фото input с корзинками -->
+       <form action="">
+          <ul class="order-baskets">
+            <li class="order-item">
+               <label class="order-product">
+                   <span class="order-name-basket">Strawberry Basket</span>
+                   <span class="order-description">Plant</span>
+                   <input class="order-input-check" type="checkbox" name="checkbox-basket" value="music"/>
+                   <span class="order-check"> </span>
+                   <img class="order-img-basket"
+                     srcset="../img/basket1@1x.png 1x, ../img/basket1@2x.png 2x"
+                     src="../img/basket1@1x.png"
+                     alt="Basket"/>
+                </label>
+            </li>
+                <li class="order-item">
+                <label class="order-product">
+                  <span class="order-name-basket">Strawberry Basket</span>
+                  <span class="order-description">Plant</span>
+                  <input class="order-input-check" type="checkbox" name="hobby" value="music"/>
+                   <span class="order-check"> </span>
+                   <img class="order-img-basket"
+                     srcset="../img/basket2@1x.png 1x, ../img/basket2@2x.png 2x"
+                     src="../img/basket2@1x.png"
+                     alt="Basket"/>
+               </label>
+                </li>
+             <li class="order-item">
+                <label class="order-product">
+                   <span class="order-name-basket">Strawberry Basket</span>
+                   <span class="order-description">Plant</span>
+                   <input class="order-input-check" type="checkbox" name="hobby" value="music"/>
+                   <span class="order-check"> </span>
+                   <img class="order-img-basket"
+                     srcset="../img/basket3@1x.png 1x, ../img/basket3@2x.png 2x"
+                     src="../img/basket3@1x.png"
+                     alt="Basket"/>
+               </label>
+                </li>
+            </ul>
+
+            <!-- форма заполнения -->
+           <div>
+             <label >
+                <input class="order-info-input" type="text" name="username" placeholder="Enter full name..." />
+             </label>
+             <label>
+                <input class="order-info-input" type="email" name="email" placeholder="Enter email..." />
+             </label>
+             <label>
+                <input class="order-info-input" type="text" name="card" placeholder="Enter card.." />
+             </label>
+                         
+             <label>
+               <textarea class="order-textarea" name="feedback" rows="5" placeholder="Enter comments..."></textarea>
+            </label>
+            <!-- кнопка отправить -->
+            <button class="order-submit" type="submit">
+              <span class="order-btn-text">Submit</span></button>
+            </div>
+       </form>
+
+        <!-- картинка дівчина з бананами -->
+            <div class="img-girl-banana">
+              <img  
+                srcset="../img/girl-banana@1px.png 1x, ../img/girl-banana@2px.png 2x"
+                src="../img/girl-banana@1px.png"
+                alt="Man"
+               
+              />
+            </div>
+    
+  </div>
+  <div class="order-modal is-hidden" id="modal-send">
+    <span class="order-btn-text">YOUR SEND</span>
+    <button id="send-close" class="order-btn-modal-close">
+      <svg class="icon-modal" width="24" height="24">
+        <use href="../img/icon.svg/#icon-close-black"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- місце для модалки tha -->
+</div>

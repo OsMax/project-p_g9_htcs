@@ -1,0 +1,15 @@
+.section-title-how-it-works {
+  margin-bottom: 14px;
+  text-align: center;
+}
+.section-description-how-it-works {
+  margin-bottom: 44px;
+  text-align: center;
+}
+.steps-to-order {
+  display: flex;
+  flex-direction: column;
+}
+/* .steps-to-order:not(:last-child) {
+  margin-bottom: 20px;
+} */

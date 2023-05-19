@@ -3,7 +3,7 @@
 }
 
 .hero-text-h1 {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-size: 28px;
   font-weight: 500;
   line-height: 1;
@@ -18,7 +18,7 @@
   background-color: var(--color-red);
 }
 .hero-button {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
@@ -37,7 +37,7 @@
   transform: rotate(345deg);
 }
 .hero-text {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -62,7 +62,7 @@
   border-radius: 500px;
 }
 .fruit-header-first {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -76,7 +76,7 @@
   padding-right: auto;
 }
 .fruit-header-second {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -90,7 +90,7 @@
   padding-right: auto;
 }
 .fruit-text {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -118,7 +118,7 @@
   border-color: 2px solid var(--color-white);
 }
 .hero-list-item-organic {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -128,7 +128,7 @@
   box-shadow: 0px 4px 70px 0px #0000001a;
 }
 .hero-list-item-products {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -138,7 +138,7 @@
   box-shadow: 0px 4px 70px 0px #0000001a;
 }
 .hero-list-item-basket {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -148,7 +148,7 @@
   box-shadow: 0px 4px 70px 0px #0000001a;
 }
 .hero-list-item-fruits {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;

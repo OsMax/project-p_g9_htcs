@@ -114,6 +114,10 @@
   transition: transform 550ms cubic-bezier(0.04, 0, 0.2, 1);
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
 .order-modal.is-hidden {
   transform: translate(-50%, 0%) scale(0.75);
 }

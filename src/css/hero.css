@@ -1,4 +1,5 @@
 .hero {
+  background-color: var(--color-red);
 }
 
 .hero-text-h1 {
@@ -14,6 +15,7 @@
   height: 118px;
   text-transform: uppercase;
   margin-bottom: 376px;
+  background-color: var(--color-red);
 }
 .hero-button {
   font-family: DM Sans;
@@ -33,7 +35,6 @@
   border: none;
   margin-bottom: 44px;
   transform: rotate(345deg);
-  /* transform: translateX(148px) translateY(610px); */
 }
 .hero-text {
   font-family: DM Sans;

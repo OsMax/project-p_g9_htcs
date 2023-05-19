@@ -1,12 +1,18 @@
 .header {
-  padding: 20px 0;
+  padding: 16px 0;
 }
 
-.nav-list {
+.header-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .nav-link {

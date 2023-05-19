@@ -117,6 +117,9 @@
 .modal-open {
   overflow: hidden;
 }
+.order-container {
+  margin-top: 44px;
+}
 
 .order-modal.is-hidden {
   transform: translate(-50%, 0%) scale(0.75);

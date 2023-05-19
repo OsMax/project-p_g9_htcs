@@ -19,12 +19,13 @@
 @import url('./styles.css');
 
 .order-button{
-    position: relative;
-    left: calc(50% - 57px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     width: 114px;
     height: 114px;
-    border-radius: 100px;
+    border-radius: 50%;
     background-color: var(--color-green);
     border: none;
  

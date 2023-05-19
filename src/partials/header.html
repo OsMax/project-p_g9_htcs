@@ -1,5 +1,9 @@
 <header class="header container">
+
+  <!-- Main header navigation -->
   <nav class="header-nav">
+
+    <!-- Go to the main sections  -->
     <ul class="header-nav-list list">
       <li class="header-nav-item">
         <a class="header-nav-link link" href="#howitworks"> How It Works </a>
@@ -12,19 +16,30 @@
       </li>
     </ul>
 
-    <a class="page-logo-link" href="./index.html">
+    <!-- Go to the main page -->
+    <a class="page-logo-link link" href="./index.html">
       <svg class="page-logo-icon" width="16" height="16">
-        <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+        <use href="/img/header-mobile-icons.svg#icon-page-logo-icon"></use>
       </svg>
       <p class="page-name">
         Fresh harvest box
       </p>
     </a>
 
-    <a class="basket-logo-link" href="#order">
+    <!-- Go to the basket (order section now) -->
+    <a class="basket-logo-link link" href="#order">
       <svg class="basket-icon" width="20" height="18">
-        <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+        <use href="/img/header-mobile-icons.svg#icon-basket-icon"></use>
       </svg>
     </a>
+
+     <!-- Open mobile window button -->
+     <button class="menu-toggle js-open-menu"
+     aria-expanded="false"
+     aria-controls="mobile-menu">
+         <svg class="basket-icon" width="24" height="24">
+             <use href="/img/header-mobile-icons.svg#icon-open-mobile-menu-icon"></use>
+         </svg>
+     </button>
   </nav>
 </header>

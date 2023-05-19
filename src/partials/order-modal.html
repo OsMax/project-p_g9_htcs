@@ -1,15 +1,11 @@
 <section class="section order">
   <div class="container order-container">
-    
-
+    <button type="button" class="order-button" id="order-open">
       <svg class="icon-arrow" width="14" height="14">
-      <use href="/order-img/order-sprite.svg#icon-arrow"></use>
+        <use href="/order-img/order-sprite.svg#icon-arrow"></use>
       </svg>
       <span class="order-btn-txt">ORDER</span>
-    
     </button>
-  
-
   </div>
 </section>
 
@@ -41,7 +37,10 @@
             <span class="order-check"> </span>
             <img
               class="order-img-basket"
-              srcset="/order-img/basket1@1x.png 1x, ../order-img/basket1@2x.png 2x"
+              srcset="
+                /order-img/basket1@1x.png   1x,
+                ../order-img/basket1@2x.png 2x
+              "
               src="/order-img/basket1@1x.png"
               alt="Basket"
             />
@@ -60,7 +59,10 @@
             <span class="order-check"> </span>
             <img
               class="order-img-basket"
-              srcset="/order-img/basket2@1x.png 1x, /order-img/basket2@2x.png 2x"
+              srcset="
+                /order-img/basket2@1x.png 1x,
+                /order-img/basket2@2x.png 2x
+              "
               src="/order-img/basket2@1x.png"
               alt="Basket"
             />
@@ -79,7 +81,10 @@
             <span class="order-check"> </span>
             <img
               class="order-img-basket"
-              srcset="/order-img/basket3@1x.png 1x, /order-img/basket3@2x.png 2x"
+              srcset="
+                /order-img/basket3@1x.png 1x,
+                /order-img/basket3@2x.png 2x
+              "
               src="/order-img/basket3@1x.png"
               alt="Basket"
             />
@@ -89,45 +94,44 @@
 
       <!-- форма заполнения -->
       <div class="order-inputs">
-          <label>
-            <input
-              class="order-info-input"
-              type="text"
-              name="username"
-              placeholder="Enter full name..."
-            />
-          </label>
-          <label>
-            <input
-              class="order-info-input"
-              type="email"
-              name="email"
-              placeholder="Enter email..."
-            />
-          </label>
-          <label>
-            <input
-              class="order-info-input"
-              type="text"
-              name="card"
-              placeholder="Enter card.."
-            />
-          </label>
+        <label>
+          <input
+            class="order-info-input"
+            type="text"
+            name="username"
+            placeholder="Enter full name..."
+          />
+        </label>
+        <label>
+          <input
+            class="order-info-input"
+            type="email"
+            name="email"
+            placeholder="Enter email..."
+          />
+        </label>
+        <label>
+          <input
+            class="order-info-input"
+            type="text"
+            name="card"
+            placeholder="Enter card.."
+          />
+        </label>
 
-          <label>
-            <textarea
-              class="order-textarea"
-              name="feedback"
-              rows="5"
-              placeholder="Enter comments..."
-            ></textarea>
-          </label>
-          <!-- кнопка отправить -->
-          <button class="order-submit" type="submit">
-            <span class="order-btn-text">Submit</span>
-          </button>
-        </div>
-      
-    </form> 
+        <label>
+          <textarea
+            class="order-textarea"
+            name="feedback"
+            rows="5"
+            placeholder="Enter comments..."
+          ></textarea>
+        </label>
+        <!-- кнопка отправить -->
+        <button class="order-submit" type="submit">
+          <span class="order-btn-text">Submit</span>
+        </button>
+      </div>
+    </form>
   </div>
 </div>

@@ -1,0 +1,44 @@
+
+
+
+/* tablet styles * для планшетів */
+@media screen and (min-width: 768px){
+    .order-modal{
+        width: 704px;
+    }
+
+    .order-item{
+        display: inline-block;
+        width: calc((100% - 12px*(2))/3);
+        height: 250px;
+    }
+
+    .order-name-basket{
+        margin-top: 20px;
+    }
+
+    .order-img-basket{
+       width: 172px;
+       bottom: 14px;
+       right: 14px;
+}
+
+.order-img-basket:nth-child(1){
+    right: 33px;
+}
+
+.order-info-input,
+.order-textarea{
+    width: 360px;
+}
+
+.order-submit{
+    display: block;
+}
+
+.img-girl-banana{
+    position: relative;
+    display: inline-block;
+}
+
+}

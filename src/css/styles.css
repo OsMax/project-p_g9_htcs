@@ -8,6 +8,7 @@
 @import url('./header.css');
 @import url('./order.css');
 @import url('./order-modal.css');
+@import url('./howitworks.css');
 
 :root {
   --color-black: #000000;

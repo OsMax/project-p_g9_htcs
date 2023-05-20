@@ -1,5 +1,20 @@
+/**
+  |============================
+  | СТИЛІ ХІРОУ
+  |============================
+*/
 .hero {
   background-color: var(--color-red);
+  padding-top: 56px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 452px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/girl-hero@1x.png);
+  max-width: 1280px;
+  background-position: 50% 50%;
 }
 
 .hero-text-h1 {
@@ -13,24 +28,28 @@
   width: 335px;
   height: 118px;
   text-transform: uppercase;
-  margin-bottom: 376px;
+  margin-bottom: 386px;
   background-color: var(--color-red);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-button {
+  display: block;
   font-family: 'DM Sans';
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-red);
+  background-color: var(--color-white);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
-  width: 80px;
-  height: 80px;
-  border-radius: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  border: none;
   margin-bottom: 44px;
   transform: rotate(345deg);
 }
@@ -44,6 +63,8 @@
   width: 279px;
   height: 90px;
   margin-bottom: 44px;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .fruit-first-card {
   width: 249px;
@@ -70,6 +91,7 @@
   padding-bottom: 61px;
   padding-left: auto;
   padding-right: auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .fruit-header-second {
   font-family: 'DM Sans';
@@ -83,6 +105,7 @@
   padding-bottom: 19px;
   padding-left: auto;
   padding-right: auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .fruit-text {
   font-family: 'DM Sans';
@@ -98,6 +121,7 @@
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-list {
   display: flex;
@@ -111,7 +135,7 @@
   border-radius: 20px;
   border-color: 2px solid var(--color-white);
 }
-.hero-list-item-organic {
+.hero-list-item {
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
@@ -119,31 +143,5 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-}
-.hero-list-item-products {
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--color-white);
-}
-.hero-list-item-basket {
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--color-white);
-}
-.hero-list-item-fruits {
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--color-white);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }

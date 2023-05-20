@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./mobile-menu.css');
 
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -34,8 +35,8 @@
 
 /* Загальний стилі для СПИСКІВ */
 .list {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   list-style-type: none;
 }
 /* Загальний стилі для ЛІНКІВ */
@@ -43,8 +44,11 @@
   text-decoration: none;
 }
 /* Загальний стилі для КОНТЕЙНЕРІВ (мобільна версія) */
-.container {
-  max-width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+/* @media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 32px;
+  }
+} */

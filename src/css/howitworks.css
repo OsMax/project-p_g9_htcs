@@ -2,14 +2,14 @@
 :root {
   font-family: DM Sans;
 }
-/* написав фон для контейнеру, щоб можно було бачити текс */
-/* .container {
-  background-color: var(--color-red);
-} */
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.how-it-works {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .section-title-how-it-works {
   margin: 0 auto 14px;
@@ -20,6 +20,7 @@ img {
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .section-description-how-it-works {
   margin: 0 auto 44px;
@@ -29,6 +30,14 @@ img {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.steps-to-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 44px;
 }
 
 .steps-to-order-item {
@@ -68,14 +77,13 @@ img {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .steps-to-order-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .how-it-works-gif {
-  margin-top: 44px;
-  margin-bottom: 80px;
   border: 0px solid;
   border-radius: 20px;
   overflow: hidden;
@@ -90,32 +98,23 @@ img {
     max-width: 509px;
   }
   .steps-to-order {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 80px;
   }
+
   .steps-to-order-item {
     max-width: 389px;
+    padding: 40px 20px;
   }
   .steps-to-order-item:not(:last-child) {
     margin-bottom: 24px;
   }
-  .steps-wrapper {
-    max-width: 389px;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .how-it-works-gif {
-    margin-bottom: 144px;
-  }
 }
 @media screen and (min-width: 1280px) {
   .steps-to-order {
-    flex-wrap: nowrap;
+    flex-direction: row;
   }
   .how-it-works-gif {
-    margin: 80px auto 150px;
+    margin: auto;
     max-width: 860px;
   }
   .steps-to-order-item:not(:last-child) {

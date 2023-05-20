@@ -127,6 +127,18 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.04em;
+
+    color: var(--color-white);
+  }
+
+  .mobile-basket-icon {
+    fill: var(--color-white);
   }
 
   .mobile-nav-link{
@@ -134,11 +146,5 @@
     justify-content:center;
     align-items: center;
     min-width: 78px;
-
-    font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.04em;
   }
 /*     /MOBILE MENU STYLES        */

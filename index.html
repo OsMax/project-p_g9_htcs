@@ -20,7 +20,7 @@
     />
     
     
-    <script type="module" crossorigin src="/project-p_g9_htcs/assets/index-d67910ca.js"></script>
+    <script type="module" crossorigin src="/project-p_g9_htcs/assets/index-c4ec90e8.js"></script>
     <link rel="stylesheet" href="/project-p_g9_htcs/assets/index-aa8df478.css">
   </head>
   <body>
@@ -66,9 +66,10 @@
       </a>
       <!-- Open mobile menu button -->
       <button
-        class="menu-toggle js-open-menu"
+        class="menu-toggle"
         aria-expanded="false"
         aria-controls="mobile-menu"
+        id="open-menu"
       >
         <svg class="basket-icon" width="24" height="24">
           <use
@@ -81,7 +82,7 @@
 </header>
 
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container" id="mobile-menu">
   <header class="header container">
     <div class="mobile-header-box">
       <!-- Main header navigation -->
@@ -105,11 +106,7 @@
         </a>
       </nav>
       <!-- Close mobile menu -->
-      <button
-        type="button"
-        class="menu-container-toggle js-close-menu"
-        id="menu-hide"
-      >
+      <button type="button" class="menu-container-toggle" id="close-menu">
         <svg class="menu-container-icon" width="24px" height="24px">
           <use
             href="/project-p_g9_htcs/assets/header-mobile-icons-d9f72445.svg#icon-close-mobile-menu-icon"
@@ -144,8 +141,6 @@
       </li>
     </ul>
   </nav>
-
-  <script defer src="./js/mobile-menu.js"></script>
 </div>
 
 

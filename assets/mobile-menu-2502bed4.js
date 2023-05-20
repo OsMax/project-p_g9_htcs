@@ -1,0 +1,1 @@
+(()=>{const n=document.querySelector("#mobile-menu"),o=document.querySelector("#open-menu"),t=document.querySelector("#close-menu");o.addEventListener("click",e),t.addEventListener("click",e);function e(){document.body.classList.toggle("modal-open"),n.classList.toggle("is-open")}})();

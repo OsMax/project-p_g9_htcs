@@ -82,7 +82,7 @@ img {
   letter-spacing: -0.04em;
   color: #ae1332;
 }
-.section-header {
+.fruits-section-header {
   margin-bottom: 14px;
   font-weight: 500;
   font-size: 40px;
@@ -94,7 +94,7 @@ img {
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
-.header-content {
+.fruits-header-content {
   margin-bottom: 44px;
   font-weight: 400;
   font-size: 14px;

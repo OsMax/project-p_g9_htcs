@@ -10,7 +10,6 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   width: 335px;
   height: 118px;
   text-transform: uppercase;
@@ -26,7 +25,6 @@
   text-align: center;
   color: var(--color-red);
   text-transform: uppercase;
-  box-shadow: 0px 4px 70px 0px #0000001a;
   width: 80px;
   height: 80px;
   border-radius: 50px;
@@ -43,7 +41,6 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   width: 279px;
   height: 90px;
   margin-bottom: 44px;
@@ -69,7 +66,6 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   padding-top: 28px;
   padding-bottom: 61px;
   padding-left: auto;
@@ -83,7 +79,6 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   padding-top: 28px;
   padding-bottom: 19px;
   padding-left: auto;
@@ -98,7 +93,6 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   width: 155px;
   height: 70px;
   margin-bottom: 40px;
@@ -125,7 +119,6 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
 }
 .hero-list-item-products {
   font-family: 'DM Sans';
@@ -135,7 +128,6 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
 }
 .hero-list-item-basket {
   font-family: 'DM Sans';
@@ -145,7 +137,6 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
 }
 .hero-list-item-fruits {
   font-family: 'DM Sans';
@@ -155,5 +146,4 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
 }

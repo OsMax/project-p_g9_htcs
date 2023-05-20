@@ -1,12 +1,8 @@
-body {font-family: 'DM Sans';}
-.container {
-  outline: 2px solid red;
-    outline-offset: -2px;
+.footer {
+  background-color: var(--color-white);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
-.footer {background-color: var(--color-white);
-padding-top: 80px;
-padding-bottom: 80px;}
 
 .footer-thumb-pic {
   height: 172px;
@@ -20,10 +16,10 @@ padding-bottom: 80px;}
 }
 
 .footer-thumb-pic > img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .site-logo {
@@ -38,18 +34,17 @@ padding-bottom: 80px;}
   color: var(--color-red);
 }
 .site-logo::before {
-  content: "";
+  content: '';
   display: block;
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  
+
   background-image: url('./src/img/sprite.svg#icon-vector-1');
   background-size: contain;
   background-repeat: no-repeat;
   fill: #ae1532;
 }
-
 
 .footer-icon-list {
   display: flex;

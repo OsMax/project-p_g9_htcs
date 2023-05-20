@@ -1,15 +1,125 @@
+
+:root {
+  font-family: DM Sans;
+}
+/* написав фон для контейнеру, щоб можно було бачити текс */
+/* .container {
+  background-color: var(--color-red);
+} */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .section-title-how-it-works {
-  margin-bottom: 14px;
+  margin: 0 auto 14px;
   text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 .section-description-how-it-works {
-  margin-bottom: 44px;
+  margin: 0 auto 44px;
   text-align: center;
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
 }
-.steps-to-order {
+
+.steps-to-order-item {
   display: flex;
-  flex-direction: column;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  padding: 20px 20px;
+  align-items: center;
+  max-width: 335px;
 }
-/* .steps-to-order:not(:last-child) {
+.steps {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: -0.04em;
+  border: 0px solid;
+  border-radius: 200px;
+  text-align: center;
+  min-width: 136px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 14px;
+}
+.first {
+  background-color: var(--color-red);
+}
+.second {
+  background-color: #a1c864;
+}
+.third {
+  background-color: var(--color-yellow);
+}
+.steps-text {
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+.steps-to-order-item:not(:last-child) {
   margin-bottom: 20px;
-} */
+}
+
+.how-it-works-gif {
+  margin-top: 44px;
+  margin-bottom: 80px;
+  border: 0px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .section-title-how-it-works {
+    font-size: 40px;
+    line-height: 1.1;
+    max-width: 624px;
+  }
+  .section-description-how-it-works {
+    max-width: 509px;
+  }
+  .steps-to-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .steps-to-order-item {
+    max-width: 389px;
+  }
+  .steps-to-order-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .steps-wrapper {
+    max-width: 389px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .how-it-works-gif {
+    margin-bottom: 144px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .steps-to-order {
+    flex-wrap: nowrap;
+  }
+  .how-it-works-gif {
+    margin: 80px auto 150px;
+    max-width: 860px;
+  }
+  .steps-to-order-item:not(:last-child) {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+}

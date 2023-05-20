@@ -21,7 +21,7 @@
     
     
     <script type="module" crossorigin src="/project-p_g9_htcs/assets/index-c4ec90e8.js"></script>
-    <link rel="stylesheet" href="/project-p_g9_htcs/assets/index-aa8df478.css">
+    <link rel="stylesheet" href="/project-p_g9_htcs/assets/index-7250e3c3.css">
   </head>
   <body>
     <header class="header container">
@@ -456,7 +456,7 @@
               class="order-img-basket"
               srcset="/project-p_g9_htcs/assets/basket1@1x-3c973158.png 1x, /project-p_g9_htcs/assets/basket1@2x-87ffe9db.png 2x"
               src="/project-p_g9_htcs/assets/basket1@1x-3c973158.png"
-              alt="Basket"
+              alt="basket with strawberries"
             />
           </label>
         </li>
@@ -475,7 +475,7 @@
               class="order-img-basket"
               srcset="/project-p_g9_htcs/assets/basket2@1x-360c376f.png 1x, /project-p_g9_htcs/assets/basket2@2x-307847b0.png 2x"
               src="/project-p_g9_htcs/assets/basket2@1x-360c376f.png"
-              alt="Basket"
+              alt="basket of apples and oranges"
             />
           </label>
         </li>
@@ -494,7 +494,7 @@
               class="order-img-basket"
               srcset="/project-p_g9_htcs/assets/basket3@1x-c8ac9640.png 1x, /project-p_g9_htcs/assets/basket3@2x-70844663.png 2x"
               src="/project-p_g9_htcs/assets/basket3@1x-c8ac9640.png"
-              alt="Basket"
+              alt="basket with berries"
             />
           </label>
         </li>
@@ -507,6 +507,8 @@
             class="order-info-input"
             type="text"
             name="username"
+            required pattern="^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$"
+            title="Username must be two words separated by space."
             placeholder="Enter full name..."
           />
         </label>
@@ -515,6 +517,8 @@
             class="order-info-input"
             type="email"
             name="email"
+            required pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
+            title="Email entered incorrectly!"
             placeholder="Enter email..."
           />
         </label>
@@ -523,6 +527,8 @@
             class="order-info-input"
             type="text"
             name="card"
+            required pattern="[0-9]{13,16}"
+            title="Card number must contain 13 to 16 digits!"
             placeholder="Enter card.."
           />
         </label>

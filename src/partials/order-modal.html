@@ -1,0 +1,126 @@
+<!-- оформлення бекдропа і модального вікна -->
+
+<div class="backdrop is-hidden" id="backdrop">
+  <div class="order-modal is-hidden" id="modal-order">
+    <h3 class="order-text">YOUR ORDER</h3>
+    <!-- кнопка-крестик -->
+    <button class="order-btn-close" id="order-close">
+      <svg class="icon-modal" width="28" height="28">
+        <use href="/order-img/order-sprite.svg#icon-close-red"></use>
+      </svg>
+    </button>
+
+    <!-- фото input с корзинками -->
+    <form action="">
+      <ul class="order-baskets">
+        <li class="order-item">
+          <label class="order-product">
+            <span class="order-name-basket">Strawberry Basket</span>
+            <span class="order-description">Plant</span>
+            <input
+              class="order-input-check"
+              type="checkbox"
+              name="checkbox-basket"
+              value="music"
+            />
+            <span class="order-check"> </span>
+            <img
+              class="order-img-basket"
+              srcset="
+                /order-img/basket1@1x.png  1x,
+                ./order-img/basket1@2x.png 2x
+              "
+              src="/order-img/basket1@1x.png"
+              alt="Basket"
+            />
+          </label>
+        </li>
+        <li class="order-item">
+          <label class="order-product">
+            <span class="order-name-basket">Strawberry Basket</span>
+            <span class="order-description">Plant</span>
+            <input
+              class="order-input-check"
+              type="checkbox"
+              name="hobby"
+              value="music"
+            />
+            <span class="order-check"> </span>
+            <img
+              class="order-img-basket"
+              srcset="
+                /order-img/basket2@1x.png 1x,
+                /order-img/basket2@2x.png 2x
+              "
+              src="/order-img/basket2@1x.png"
+              alt="Basket"
+            />
+          </label>
+        </li>
+        <li class="order-item">
+          <label class="order-product">
+            <span class="order-name-basket">Strawberry Basket</span>
+            <span class="order-description">Plant</span>
+            <input
+              class="order-input-check"
+              type="checkbox"
+              name="hobby"
+              value="music"
+            />
+            <span class="order-check"> </span>
+            <img
+              class="order-img-basket"
+              srcset="
+                /order-img/basket3@1x.png 1x,
+                /order-img/basket3@2x.png 2x
+              "
+              src="/order-img/basket3@1x.png"
+              alt="Basket"
+            />
+          </label>
+        </li>
+      </ul>
+
+      <!-- форма заполнения -->
+      <div class="order-inputs">
+        <label>
+          <input
+            class="order-info-input"
+            type="text"
+            name="username"
+            placeholder="Enter full name..."
+          />
+        </label>
+        <label>
+          <input
+            class="order-info-input"
+            type="email"
+            name="email"
+            placeholder="Enter email..."
+          />
+        </label>
+        <label>
+          <input
+            class="order-info-input"
+            type="text"
+            name="card"
+            placeholder="Enter card.."
+          />
+        </label>
+
+        <label>
+          <textarea
+            class="order-textarea"
+            name="feedback"
+            rows="5"
+            placeholder="Enter comments..."
+          ></textarea>
+        </label>
+        <!-- кнопка отправить -->
+        <button class="order-submit" type="submit">
+          <span class="order-btn-text">Submit</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

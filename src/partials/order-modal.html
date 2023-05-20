@@ -31,7 +31,7 @@
                 ./order-img/basket1@2x.png 2x
               "
               src="/order-img/basket1@1x.png"
-              alt="Basket"
+              alt="basket with strawberries"
             />
           </label>
         </li>
@@ -53,7 +53,7 @@
                 /order-img/basket2@2x.png 2x
               "
               src="/order-img/basket2@1x.png"
-              alt="Basket"
+              alt="basket of apples and oranges"
             />
           </label>
         </li>
@@ -75,7 +75,7 @@
                 /order-img/basket3@2x.png 2x
               "
               src="/order-img/basket3@1x.png"
-              alt="Basket"
+              alt="basket with berries"
             />
           </label>
         </li>
@@ -88,6 +88,8 @@
             class="order-info-input"
             type="text"
             name="username"
+            required pattern="^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$"
+            title="Username must be two words separated by space."
             placeholder="Enter full name..."
           />
         </label>
@@ -96,6 +98,8 @@
             class="order-info-input"
             type="email"
             name="email"
+            required pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
+            title="Email entered incorrectly!"
             placeholder="Enter email..."
           />
         </label>
@@ -104,6 +108,8 @@
             class="order-info-input"
             type="text"
             name="card"
+            required pattern="[0-9]{13,16}"
+            title="Card number must contain 13 to 16 digits!"
             placeholder="Enter card.."
           />
         </label>

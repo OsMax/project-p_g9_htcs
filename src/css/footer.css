@@ -46,7 +46,7 @@
   height: 16px;
   margin-right: 8px;
 
-  background-image: url('../img/site-logo.svg');
+  background-image: url('./img/site-logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
   fill: #ae1532;

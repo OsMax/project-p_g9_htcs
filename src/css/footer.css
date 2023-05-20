@@ -1,3 +1,5 @@
+
+
 .footer {
   background-color: var(--color-white);
   padding-top: 80px;
@@ -7,6 +9,7 @@
 .footer-thumb-pic {
   height: 172px;
   width: 335px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .footer-thumb-pic {
@@ -28,10 +31,13 @@
   line-height: 1.29;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--color-red);
+
+  margin-bottom: 24px;
 }
 .site-logo::before {
   content: '';
@@ -40,13 +46,36 @@
   height: 16px;
   margin-right: 8px;
 
-  background-image: url('./src/img/sprite.svg#icon-vector-1');
+  background-image: url('./img/site-logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
   fill: #ae1532;
 }
 
+.footer-nav-list {
+  margin-bottom: 44px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.footer-link {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.04em;
+  
+  color: var(--color-red);
+
+}
+
+
 .footer-icon-list {
   display: flex;
   gap: 20px;
+  justify-content: center;  
 }

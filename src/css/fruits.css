@@ -1,3 +1,14 @@
+body {
+  background-color: var(--color-red);
+}
+/* Центрування заголовку і параграфу */
+p {
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+/* Кольори всіх карток */
 .card-1 {
   background-color: #f8766b;
 }
@@ -29,6 +40,7 @@
   display: none;
 }
 
+/* Картки */
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +58,7 @@
 .title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 1.19;
   align-items: center;
   letter-spacing: -0.04em;
   color: #ffffff;
@@ -55,7 +67,7 @@
 .content {
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   align-items: center;
   letter-spacing: -0.02em;
   color: #ffffff;
@@ -63,7 +75,7 @@
 .price {
   font-weight: 500;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   display: inline-block;
   align-items: center;
   letter-spacing: -0.04em;
@@ -73,7 +85,7 @@
   margin-bottom: 14px;
   font-weight: 500;
   font-size: 40px;
-  line-height: 44px;
+  line-height: 1.1;
   align-items: center;
   text-align: center;
   letter-spacing: -0.04em;
@@ -85,7 +97,7 @@
   margin-bottom: 44px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.28;
   display: flex;
   align-items: center;
   text-align: center;
@@ -93,6 +105,7 @@
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+/*Загальні стилі для Таблетки */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -111,6 +124,7 @@
     padding: 64px 24px 24px 24px;
     width: calc(100% / 2 - 8px);
   }
+  /* Відображення карток */
   .card-7 {
     background-color: #9b5366;
     display: block;
@@ -120,7 +134,7 @@
     display: block;
   }
 }
-/* Загальні стилі для десктопу */
+/* Загальні стилі для Десктопу */
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -133,7 +147,7 @@
     margin-bottom: 44px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     display: flex;
     align-items: center;
     text-align: center;
@@ -152,6 +166,7 @@
     padding: 64px 24px 24px 24px;
     width: calc(100% / 3 - 16px);
   }
+  /* Відображення карток */
   .card-7 {
     background-color: #9b5366;
     display: block;

@@ -27,12 +27,13 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  width: 335px;
-  height: 118px;
+  max-width: 335px;
   text-transform: uppercase;
   margin-bottom: 386px;
   background-color: var(--color-red);
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-button {
   display: block;
@@ -66,20 +67,22 @@
   height: 90px;
   margin-bottom: 44px;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  /* text-align: center; */
+  margin: 0 auto;
 }
 .fruit-first-card {
   width: 249px;
   height: 387px;
   background-color: var(--color-green);
   border-radius: 500px;
-  margin-bottom: 44px;
+  margin: 44px auto;
 }
 .fruit-second-card {
   width: 249px;
   height: 387px;
   background-color: var(--color-yellow);
   border-radius: 500px;
+  margin: 0 auto;
 }
 .fruit-header-first {
   font-family: 'DM Sans';

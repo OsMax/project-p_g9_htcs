@@ -197,14 +197,11 @@
   color: var(--color-white);
   font-family: 'DM Sans';
 }
-.order-product {
-  /* position: relative; */
-}
 
 .order-input-check {
   position: absolute;
   -webkit-appearance: none;
-  -moz-animation: none;
+  /* -moz-animation: none; */
   appearance: none;
 }
 
@@ -275,12 +272,12 @@
   background-color: var(--color-white);
 }
 
-input:invalid:not(:placeholder-shown) {
+.order-info-input:invalid:not(:placeholder-shown) {
   outline: 1px solid red;
   border-color: red;
 }
 
-input:valid:not(:placeholder-shown) {
+.order-info-input:valid:not(:placeholder-shown) {
   outline: 1px solid green;
   border-color: green;
 }

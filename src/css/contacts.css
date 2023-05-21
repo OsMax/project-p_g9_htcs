@@ -1,5 +1,6 @@
 /* Contacts */
 .contacts {
+  background-color: var(--color-red);
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -29,10 +30,12 @@
 }
 
 .contacts-title {
+  font-family: 'DM Sans';
+  font-style: normal;
   position: relative;
   top: 38px;
   display: flex;
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 32px;
   line-height: 1;
   align-items: center;
@@ -45,6 +48,7 @@
 @media screen and(min-width:768px) {
   .contacts-title {
     font-size: 54px;
+    font-weight: 500;
   }
 }
 @media screen and (min-width: 1279px) {
@@ -68,17 +72,48 @@
 .contacts-img {
   display: flex;
   gap: 24px;
-  margin-bottom: 80px;
+}
+@media screen and (min-width: 767px) {
+  .contacts-img {
+    margin-bottom: 80px;
+  }
 }
 .content-img {
   border-radius: 20px;
+}
+.melon {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  min-width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .melon {
+    min-width: 344px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .melon {
+  }
 }
 @media screen and (max-width: 768px) {
   .contacts-info {
     display: none;
   }
 }
-
+.bilberry {
+}
+@media screen and (max-width: 767px) {
+  .bilberry {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bilberry {
+    min-width: 344px;
+    height: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts-info {
     font-family: 'DM Sans';
@@ -98,15 +133,23 @@
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   }
 }
-.container-form {
-  display: flex;
-  justify-content: center;
-  max-width: 292px;
-  height: 48px;
-  border: 1px solid #ffffff;
-  border-radius: 100px;
-  margin-right: auto;
-  margin-left: auto;
+@media screen and (max-width: 767px) {
+  .container-form {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-form {
+    display: flex;
+    justify-content: center;
+    max-width: 292px;
+    height: 48px;
+    border: 1px solid hsla(0, 0%, 100%, 0.5);
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .contacts-form {
   display: flex;

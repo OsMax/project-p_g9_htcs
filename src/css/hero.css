@@ -16,14 +16,15 @@
   max-width: 1280px;
   background-position-y: 108px;
 }
-.girl-container {
+/* .girl-container {
   background-image: url(../img/bananaplus@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 22px;
-  /* border: 1px solid white;
-  border-radius: 500px; */
-}
+  
+  border: 1px solid white;
+  border-radius: 500px;
+} */
 .hero-text-h1 {
   font-family: 'DM Sans';
   font-size: 28px;
@@ -181,6 +182,13 @@
   |============================
 */
 @media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .hero-text-h1 {
+    width: 704px;
+    height: 168px;
+  }
   .sorting {
     margin-left: auto;
     margin-right: auto;
@@ -194,6 +202,10 @@
   .fruit-second-card {
     margin-bottom: 44px;
   }
+  .hero-list {
+    display: flex;
+    justify-content: end;
+  }
 }
 /**
   |============================
@@ -201,6 +213,16 @@
   |============================
 */
 @media only screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+  .hero-text-h1 {
+    font-size: 64px;
+    line-height: 1;
+    width: 898px;
+    height: 198px;
+    letter-spacing: -0.04em;
+  }
   .second-group {
     display: flex;
     flex-direction: column-reverse;

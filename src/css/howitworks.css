@@ -86,6 +86,12 @@ img {
   border: 0px solid;
   border-radius: 20px;
   overflow: hidden;
+  height: 476px;
+}
+.how-it-works-gif > img {
+  object-fit: cover;
+  height: 476px;
+  width: 335px;
 }
 @media screen and (min-width: 768px) {
   .section-title-how-it-works {
@@ -103,9 +109,13 @@ img {
   .steps-to-order-item {
     max-width: 389px;
     padding: 40px 20px;
+    max-height: 128px;
   }
   .steps-to-order-item:not(:last-child) {
     margin-bottom: 24px;
+  }
+  .how-it-works-gif > img {
+    width: 704px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -119,5 +129,8 @@ img {
   .steps-to-order-item:not(:last-child) {
     margin-right: 24px;
     margin-bottom: 0;
+  }
+  .how-it-works-gif > img {
+    width: 860px;
   }
 }

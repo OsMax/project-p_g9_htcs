@@ -75,7 +75,7 @@
   
   /* if mobile menu is opened */
   .menu-container.is-open {
-    position: absolute;
+    position: fixed;
     top: 57px;
     transform: translateX(0);
     display: unset;

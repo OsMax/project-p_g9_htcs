@@ -131,10 +131,10 @@
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    fill: var(--color-red);
+    stroke: var(--color-red);
 
-    top: -40px;
-    right: 24px;
+    top: -43px;
+    right: 30px;
     width: 24px;
     height: 24px;
     background-color: transparent;
@@ -159,14 +159,25 @@
     color: var(--color-white);
   }
 
-  .mobile-basket-icon {
+  /* .mobile-basket-icon {
     fill: var(--color-white);
-  }
+  } */
 
   .mobile-nav-link{
     display: flex;
     justify-content:center;
     align-items: center;
     min-width: 78px;
+  }
+
+  .mobile-nav-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .basket-nav-link {
+    width: 24px;
+    height: 24px;
+    background-image: url('/img/header-icons/basket-white-logo-icon.svg');
   }
 /*     /MOBILE MENU STYLES        */

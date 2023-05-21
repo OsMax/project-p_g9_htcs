@@ -21,7 +21,7 @@
     
     
     <script type="module" crossorigin src="/project-p_g9_htcs/assets/index-6a59f653.js"></script>
-    <link rel="stylesheet" href="/project-p_g9_htcs/assets/index-6a90f87f.css">
+    <link rel="stylesheet" href="/project-p_g9_htcs/assets/index-0b431dca.css">
   </head>
   <body>
     <header class="header container">
@@ -314,7 +314,7 @@
     <!-- НЕ ВИДАЛЯЙ!!!!! -->
     <button type="button" class="order-button" id="order-open">
       <svg class="icon-arrow" width="14" height="14">
-        <use href="/project-p_g9_htcs/assets/order-sprite-61cff914.svg#icon-arrow"></use>
+        <use href="/project-p_g9_htcs/assets/order-sprite-68adf80d.svg#icon-arrow"></use>
       </svg>
       <span class="order-btn-txt">ORDER</span>
     </button>
@@ -357,7 +357,7 @@
           name="user-email"
           placeholder="Enter email..."
         />
-        <button class="contacts-btn" type="submit">
+        <button class="contacts-btn" type="submit" id="send-open">
           <span class="contacts-btn-text"> Send</span>
         </button>
       </form>
@@ -434,7 +434,7 @@
     <!-- кнопка-крестик -->
     <button class="order-btn-close" id="order-close">
       <svg class="icon-modal" width="28" height="28">
-        <use href="/project-p_g9_htcs/assets/order-sprite-61cff914.svg#icon-close-red"></use>
+        <use href="/project-p_g9_htcs/assets/order-sprite-68adf80d.svg#icon-close-red"></use>
       </svg>
     </button>
 
@@ -548,8 +548,37 @@
       </div>
     </form>
   </div>
-</div>
 
+  <!-- модальне вікно send  is-hidden-->
+  <div class="send is-hidden" id="modal-send" >
+    
+    <!-- кнопка-крестик -->
+    <button class="send-btn-close" id="send-close">
+      <svg class="icon-send-modal" width="24" height="24">
+        <use href="/project-p_g9_htcs/assets/order-sprite-68adf80d.svg#icon-close-white"></use>
+      </svg> 
+      </button>
+
+      <img
+         class="send-img"
+         srcset="/project-p_g9_htcs/assets/raspberries@1px-f8660b4c.png 1x, /project-p_g9_htcs/assets/raspberries@2px-081fa7a7.png 2x"
+         src="/project-p_g9_htcs/assets/raspberries@1px-f8660b4c.png"
+         alt="basket with strawberries"
+            />
+     
+
+    <span class="send-header">
+    <h3 >THANK YOU</h3>
+    </span>
+
+     <span class="send-text">Thank you for your order! Our team is 
+      preparing your box with fresh, delicious fruits
+       and vegetables, and we'll deliver it straight 
+       to your doorstep. We appreciate your business 
+       and look forward to providing you with the best
+        possible experience!</span>
+</div>
+</div>
 
     <!-- Loads the specified .html file -->
 

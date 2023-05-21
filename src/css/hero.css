@@ -7,16 +7,16 @@
   background-color: var(--color-red);
   padding-top: 56px;
   padding-bottom: 80px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px;
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  /* background-size: 200px; */
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/girl-hero@1x.png);
+  /* background-image: url(../img/girl-hero@1x.png); */
   max-width: 1280px;
-  background-position: 50% 50%;
+  /* background-position: 50% 50%;
   border-radius: 500px;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .hero-text-h1 {
@@ -127,15 +127,31 @@
 }
 .hero-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 44px;
 }
 
-.hero-list-item {
+/* .customers-list-item {
+    flex-basis: calc((100% - 88px) / 2);
+  } */
+
+.border-first {
   width: 125px;
   height: 38px;
-  border-radius: 20px;
-  border-color: 2px solid var(--color-white);
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.border-second {
+  width: 132px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.hero-list-item-h {
+  width: auto;
+  height: auto;
 }
 .hero-list-item {
   font-family: 'DM Sans';
@@ -144,6 +160,9 @@
   line-height: 1.16;
   letter-spacing: -0.04em;
   text-align: center;
+  text-transform: uppercase;
   color: var(--color-white);
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }

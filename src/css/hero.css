@@ -1,95 +1,125 @@
+/**
+  |============================
+  | СТИЛІ ХІРОУ
+  |============================
+*/
 .hero {
+  background-color: var(--color-red);
+  padding-top: 56px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/bggirlw@1x.jpg);
+  max-width: 1280px;
+  background-position-y: 108px;
 }
+.girl-container {
+  background-image: url(../img/bananaplus@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 22px;
 
+  /* border: 1px solid white;
+  border-radius: 500px; */
+}
 .hero-text-h1 {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-size: 28px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
-  width: 335px;
-  height: 118px;
+  /* max-width: 335px; */
+
   text-transform: uppercase;
-  margin-bottom: 376px;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 386px;
 }
 .hero-button {
-  font-family: DM Sans;
+  display: block;
+  font-family: 'DM Sans';
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-red);
+  background-color: var(--color-white);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
-  box-shadow: 0px 4px 70px 0px #0000001a;
-  width: 80px;
-  height: 80px;
-  border-radius: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  border: none;
   margin-bottom: 44px;
   transform: rotate(345deg);
-  /* transform: translateX(148px) translateY(610px); */
 }
 .hero-text {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.04em;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   width: 279px;
   height: 90px;
   margin-bottom: 44px;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+  margin: 0 auto;
 }
 .fruit-first-card {
   width: 249px;
   height: 387px;
   background-color: var(--color-green);
   border-radius: 500px;
-  margin-bottom: 44px;
+  margin: 44px auto;
 }
 .fruit-second-card {
   width: 249px;
   height: 387px;
   background-color: var(--color-yellow);
   border-radius: 500px;
+  margin: 0 auto;
 }
 .fruit-header-first {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   padding-top: 28px;
   padding-bottom: 61px;
   padding-left: auto;
   padding-right: auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .fruit-header-second {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   padding-top: 28px;
   padding-bottom: 19px;
   padding-left: auto;
   padding-right: auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .fruit-text {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -97,62 +127,165 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
   width: 155px;
   height: 70px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 44px;
 }
 
-.hero-list-item {
+/* .customers-list-item {
+    flex-basis: calc((100% - 88px) / 2);
+  } */
+
+.border-first {
   width: 125px;
   height: 38px;
-  border-radius: 20px;
-  border-color: 2px solid var(--color-white);
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
 }
-.hero-list-item-organic {
-  font-family: DM Sans;
+.border-second {
+  width: 132px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.border-third {
+  width: 125px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.border-four {
+  width: 132px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.hero-list-item-h {
+  width: auto;
+  height: auto;
+}
+.hero-list-item {
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.04em;
   text-align: center;
+  text-transform: uppercase;
   color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-.hero-list-item-products {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
+
+/**
+  |============================
+  | tablet version
+  |============================
+*/
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 157px;
+    text-align: center;
+  }
+  .hero-text-h1 {
+    width: 704px;
+    height: 168px;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 513px;
+  }
+  .hero-button {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 1;
+  }
+  .hero-text {
+    text-align: start;
+  }
+  .border-second {
+    width: 133px;
+  }
+  .border-third {
+    width: 115px;
+  }
+  .border-four {
+    width: 110px;
+  }
+  .sorting {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 144px;
+  }
+  .second-group {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .fruit-first-card {
+    margin-left: 30px;
+  }
+  .fruit-second-card {
+    margin-bottom: 44px;
+  }
+  .hero-list {
+    display: flex;
+    justify-content: end;
+  }
 }
-.hero-list-item-basket {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
-}
-.hero-list-item-fruits {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--color-white);
-  box-shadow: 0px 4px 70px 0px #0000001a;
+
+/**
+  |============================
+  | desktop version
+  |============================
+*/
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding-left: 62px;
+    padding-right: 45px;
+    width: 1280px;
+  }
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 150px;
+  }
+  .hero-text-h1 {
+    font-size: 64px;
+    line-height: 1;
+    width: 898px;
+    height: 198px;
+    margin-bottom: 483px;
+    text-align: center;
+  }
+  .hero-text {
+    width: 222px;
+    height: 108px;
+  }
+  .sorting {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 568px;
+    margin-bottom: 150px;
+    z-index: 100;
+    top: 336px;
+  }
 }

@@ -13,4 +13,10 @@
     openMenuBtn.classList.toggle('is-open');
     changeHeaderNav.classList.toggle('is-open');
   }
+
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
 })();

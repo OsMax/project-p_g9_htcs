@@ -1,121 +1,111 @@
-
-
-
 /* tablet styles * для планшетів */
-@media screen and (min-width: 768px){
-    .order-modal{
-        width: 704px;
-        padding: 40px;
+@media screen and (min-width: 768px) {
+  .order-modal {
+    width: 704px;
+    padding: 40px;
 
-        background-image: url('/order-img/girl-banana@1px.png');
-        background-repeat: no-repeat;
-        background-position: right 0% bottom 0%;
-    }
+    background-image: url('/order-img/girl-banana@1px.png');
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+  }
 
-    .order-item{
-        display: inline-block;
-        width: calc((100% - 12px*(2))/3);
-        height: 250px;
-    }
+  .order-item {
+    display: inline-block;
+    width: calc((100% - 12px * (2)) / 3);
+    height: 250px;
+  }
 
-    .order-submit{
-       display: block;
-        }
+  .order-submit {
+    display: block;
+  }
 
-    .order-name-basket{
-        margin-top: 20px;
-    }
+  .order-name-basket {
+    margin-top: 20px;
+  }
 
-    .order-img-basket{
-       bottom: 14px;
-}
+  .order-img-basket {
+    bottom: 14px;
+  }
 
-.order-item:nth-child(1) .order-img-basket{
+  .order-item:nth-child(1) .order-img-basket {
     width: 133px;
     left: 34px;
-}
-.order-item:nth-child(2) .order-img-basket{
+  }
+  .order-item:nth-child(2) .order-img-basket {
     width: 172px;
     left: 14px;
-}
-.order-item:nth-child(3) .order-img-basket{
+  }
+  .order-item:nth-child(3) .order-img-basket {
     width: 172px;
     left: 14px;
-}
+  }
 
-.order-info-input,
-.order-textarea{
+  .order-info-input,
+  .order-textarea {
     display: block;
     width: 360px;
-}
+  }
 
-.order-textarea{
+  .order-textarea {
     min-height: 145px;
-}
+  }
 
-.order-info-input{
+  .order-info-input {
     height: 48px;
-}
+  }
 
-
-.order-baskets{
+  .order-baskets {
     display: flex;
     gap: 12px;
-}
+  }
 
-
-
-.girl-img{
+  .girl-img {
     width: 100%;
-}
+  }
 
-.send{
+  .send {
     width: 600px;
     max-width: 95%;
-    min-height: 545px;
-}
+    height: 545px;
+  }
 }
 
-.send-img{
-     margin-bottom: 28px;
+.send-img {
+  margin-bottom: 28px;
 }
 
 /* для більших за планшет */
 @media screen and (min-width: 1280px) {
+  .order-baskets {
+    gap: 20px;
+  }
 
-    .order-baskets{
-        gap: 20px;
-}
+  .order-item {
+    width: calc((100% - 20px * (2)) / 3);
+    height: 308px;
+  }
 
-   .order-item{
-        width: calc((100% - 20px*(2))/3);
-        height: 308px;
-    }
+  .order-modal {
+    width: 891px;
+  }
 
-    .order-modal{
-        width: 891px;
-    }
-
-
-.order-item:nth-child(1) .order-img-basket{
+  .order-item:nth-child(1) .order-img-basket {
     width: 173px;
     left: 34px;
-}
-.order-item:nth-child(2) .order-img-basket{
+  }
+  .order-item:nth-child(2) .order-img-basket {
     width: 229px;
     left: 14px;
-}
-.order-item:nth-child(3) .order-img-basket{
+  }
+  .order-item:nth-child(3) .order-img-basket {
     width: 229px;
     left: 14px;
-}
+  }
 
- .order-modal{
-        width: 891px;
-        padding: 40px;
+  .order-modal {
+    width: 891px;
+    padding: 40px;
 
-        background-image: url('/order-img/girl-banana-big@1px.png');
-        
-    }
-
+    background-image: url('/order-img/girl-banana-big@1px.png');
+  }
 }

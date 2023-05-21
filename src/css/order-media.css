@@ -12,8 +12,6 @@
         background-position: right 0% bottom 0%;
     }
 
-
-
     .order-item{
         display: inline-block;
         width: calc((100% - 12px*(2))/3);
@@ -71,6 +69,15 @@
     width: 100%;
 }
 
+.send{
+    width: 600px;
+    max-width: 95%;
+    min-height: 545px;
+}
+}
+
+.send-img{
+     margin-bottom: 28px;
 }
 
 /* для більших за планшет */

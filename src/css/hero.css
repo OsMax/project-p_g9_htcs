@@ -16,15 +16,15 @@
   max-width: 1280px;
   background-position-y: 108px;
 }
-/* .girl-container {
+.girl-container {
   background-image: url(../img/bananaplus@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 22px;
-  
-  border: 1px solid white;
-  border-radius: 500px;
-} */
+
+  /* border: 1px solid white;
+  border-radius: 500px; */
+}
 .hero-text-h1 {
   font-family: 'DM Sans';
   font-size: 28px;
@@ -33,7 +33,7 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  max-width: 335px;
+  /* max-width: 335px; */
 
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
@@ -194,18 +194,20 @@
   |============================
 */
 @media only screen and (min-width: 768px) {
-  /* .container {
+  .container {
     width: 768px;
-  } */
+  }
   .hero {
     padding-top: 64px;
     padding-bottom: 157px;
+    text-align: center;
   }
   .hero-text-h1 {
     width: 704px;
     height: 168px;
     font-size: 50px;
     line-height: 1.1;
+    margin-bottom: 513px;
   }
   .hero-button {
     width: 114px;
@@ -213,6 +215,9 @@
     border-radius: 50%;
     font-size: 28px;
     line-height: 1;
+  }
+  .hero-text {
+    text-align: start;
   }
   .border-second {
     width: 133px;
@@ -227,11 +232,15 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    gap: 50px;
+    gap: 144px;
   }
   .second-group {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .fruit-first-card {
+    margin-left: 30px;
   }
   .fruit-second-card {
     margin-bottom: 44px;
@@ -249,6 +258,8 @@
 */
 @media only screen and (min-width: 1280px) {
   .container {
+    padding-left: 62px;
+    padding-right: 45px;
     width: 1280px;
   }
   .hero {
@@ -260,6 +271,8 @@
     line-height: 1;
     width: 898px;
     height: 198px;
+    margin-bottom: 483px;
+    text-align: center;
   }
   .hero-text {
     width: 222px;

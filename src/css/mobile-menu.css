@@ -77,6 +77,8 @@
   
   /* if mobile menu is opened */
   .menu-container.is-open {
+    position: absolute;
+    top: 58px;
     transform: translateX(0);
     display: unset;
   }
@@ -115,12 +117,32 @@
   }
 
   .mobile-lower-nav {
-
+    height: 100vh;
     background-color: var(--color-red);
   }
 
   .mobile-lower-nav {
     padding: 174px 148px 512px 148px;
+  }
+
+  .close-mobile-menu {
+    position: absolute;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    fill: var(--color-red);
+
+    top: -40px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid var(--topic-button-border);
+    /* border-radius: 50%; */
+    cursor: pointer;
+        
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .mobile-nav-list {

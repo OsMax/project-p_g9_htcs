@@ -7,8 +7,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.how-it-works {
-  padding-top: 80px;
+.how-it-works .container {
   padding-bottom: 80px;
 }
 .section-title-how-it-works {
@@ -95,6 +94,10 @@ img {
   width: 335px;
 }
 @media screen and (min-width: 768px) {
+  .how-it-works .container {
+    padding-bottom: 144px;
+  }
+
   .section-title-how-it-works {
     font-size: 40px;
     line-height: 1.1;
@@ -120,6 +123,10 @@ img {
   }
 }
 @media screen and (min-width: 1280px) {
+  .how-it-works .container {
+    padding-bottom: 150px;
+  }
+
   .steps-to-order {
     flex-direction: row;
   }

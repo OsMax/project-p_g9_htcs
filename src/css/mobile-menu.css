@@ -60,8 +60,6 @@
   /* main mobile menu container */
   .menu-container {
     display: none;
-    /* flex-direction: column;
-    justify-content: center; */
     position: fixed;
     top: 0;
     left: 0;
@@ -83,35 +81,6 @@
     display: unset;
   }
 
-  /* Close button actions*/
-  .menu-container .menu-container-toggle:hover,
-  .menu-container .menu-container-toggle:focus {
-    background-color: var(--links-hover-color);
-    fill: var(--body-color);
-  }
-
-  /* Close button */
-  .menu-container .menu-container-toggle {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* align-items: center; */
-        stroke: var(--color-red);
-
-        top: 13px;
-        right: 32px;
-        width: 24px;
-        height: 24px;
-        background-color: transparent;
-        border: 1px solid var(--topic-button-border);
-        border-radius: 50%;
-        cursor: pointer;
-        
-
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   .mobile-header-box {
     padding: 16px 0;
   }
@@ -125,13 +94,17 @@
     padding: 174px 148px 512px 148px;
   }
 
+  .menu-container-icon:hover,
+  .menu-container-icon:focus {
+    transform: rotate(360deg);
+  }
+  
+  .menu-container-icon {
+    transition: transform 500ms cubic-bezier(0.2, 0, 0.2, 1);
+  }
+
   .close-mobile-menu {
     position: absolute;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    stroke: var(--color-red);
 
     top: -43px;
     right: 30px;
@@ -139,7 +112,6 @@
     height: 24px;
     background-color: transparent;
     border: 1px solid var(--topic-button-border);
-    /* border-radius: 50%; */
     cursor: pointer;
         
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -159,25 +131,80 @@
     color: var(--color-white);
   }
 
-  /* .mobile-basket-icon {
-    fill: var(--color-white);
-  } */
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus,
+  .basket-nav-link:hover,
+  .basket-nav-link:focus
+   {
+    animation-name: rainbow1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  @keyframes rainbow1 {
+    10% {
+      border-color: rgb(243, 56, 56);
+    }
+  
+    20% {
+      border-color: orange;
+    }
+  
+    30% {
+      border-color: yellow;
+    }
+  
+    40% {
+      border-color: rgba(143, 241, 14, 0.959);
+    }
+  
+    50% {
+      border-color: rgb(57, 161, 31);
+    }
+  
+    60% {
+      border-color: rgb(59, 119, 209);
+    }
+  
+    70% {
+      border-color: rgb(51, 51, 253);
+    }
+  
+    80% {
+      border-color: rgb(124, 7, 179);
+    }
+  
+    90% {
+      border-color: rgb(255, 0, 212);
+    }
+  
+    100% {
+      border-color: rgb(224, 68, 68);
+    }
+  }
 
   .mobile-nav-link{
     display: flex;
     justify-content:center;
     align-items: center;
     min-width: 78px;
+    border: none;
   }
 
   .mobile-nav-item{
     display: flex;
     justify-content:center;
     align-items: center;
+    
   }
   .basket-nav-link {
     width: 24px;
     height: 24px;
+    justify-content:center;
+    align-items: center;
     background-image: url('/img/header-icons/basket-white-logo-icon.svg');
   }
 /*     /MOBILE MENU STYLES        */

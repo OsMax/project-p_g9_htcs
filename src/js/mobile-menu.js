@@ -12,6 +12,7 @@
     mobileMenu.classList.toggle('is-open');
     openMenuBtn.classList.toggle('is-open');
     changeHeaderNav.classList.toggle('is-open');
+    closeMenuBtn.classList.toggle('is-open'); 
   }
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {

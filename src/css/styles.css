@@ -43,6 +43,7 @@
 }
 .main .container {
   background-color: #ae1332;
+  border: 1px solid #ae1332;
 }
 
 /* Загальні стилі для таблету */

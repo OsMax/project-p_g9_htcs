@@ -31,13 +31,17 @@
     rgba(255, 255, 255, 0) 76.92%
   ); */
 }
-@media (min-device-pixel-rario: 2) and (max-width: 767px),
-  (min-resolution: 192dpi) and (max-width: 767px),
-  (min-resolution: 2dppx) and (max-width: 767px) {
-  .cont-hero {
-    background-image: url(../img/mobgirl@2x.png);
+
+@media (max-width: 767px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cont-hero {
+      background-image: url(../img/mobgirl@2x.png);
+    }
   }
 }
+
 .hero-text-h1 {
   /* max-width: 335px; */
   font-family: 'DM Sans';
@@ -153,8 +157,6 @@
   color: var(--color-white);
   padding-top: 28px;
   padding-bottom: 61px;
-  padding-left: auto;
-  padding-right: auto;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .fruit-header-second {
@@ -167,8 +169,6 @@
   color: var(--color-white);
   padding-top: 28px;
   padding-bottom: 19px;
-  padding-left: auto;
-  padding-right: auto;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .fruit-text {
@@ -313,12 +313,13 @@
     display: flex;
     justify-content: end;
   }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px) {
-  .cont-hero {
-    background-image: url(../img/tabletgirl@2x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cont-hero {
+      background-image: url(../img/tabletgirl@2x.png);
+    }
   }
 }
 
@@ -393,11 +394,12 @@
   .cont-hero {
     padding-bottom: 238px;
   }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
-  (min-resolution: 192dpi) and (min-width: 1280px),
-  (min-resolution: 2dppx) and (min-width: 1280px) {
-  .cont-hero {
-    background-image: url(../img/desctopgirl@2x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cont-hero {
+      background-image: url(../img/desctopgirl@2x.png);
+    }
   }
 }

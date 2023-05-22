@@ -81,8 +81,8 @@
 }
 
 .order-modal {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 50px;
   left: 50%;
 
   width: 392px;
@@ -150,7 +150,7 @@
 /* картинки с корзинками */
 .order-item {
   position: relative;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 20px;
   margin-bottom: 12px;
   width: calc(
@@ -324,9 +324,11 @@ textarea:not(:placeholder-shown) {
 }
 
 .send {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+
+  transform: translate(-50%, 0%);
   padding: 20px 20px 40px 20px;
 
   width: 335px;

@@ -13,14 +13,11 @@
     display: inline-block;
     width: calc((100% - 12px * (2)) / 3);
     height: 250px;
+    margin-bottom: 0;
   }
 
   .order-submit {
     display: block;
-  }
-
-  .order-name-basket {
-    margin-top: 20px;
   }
 
   .order-img-basket {

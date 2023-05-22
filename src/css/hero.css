@@ -6,6 +6,7 @@
 .cont-hero {
   /* position: relative;
   z-index: -2; */
+  position: relative;
   padding-top: 56px;
   padding-bottom: 80px;
   background-repeat: no-repeat;
@@ -34,7 +35,7 @@
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
   .cont-hero {
-    background-image: url(../img/mobgirl@1x.png);
+    background-image: url(../img/mobgirl@2x.png);
   }
 }
 .hero-text-h1 {
@@ -126,7 +127,7 @@
   margin-bottom: 44px;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   /* text-align: center; */
-  margin: 0 auto;
+  margin: 0;
 }
 .fruit-first-card {
   width: 249px;
@@ -265,7 +266,12 @@
     line-height: 1.1;
     margin-bottom: 513px;
   }
-
+  .fruit-first-card {
+    margin-bottom: 0;
+  }
+  .hero-list {
+    margin-bottom: 0;
+  }
   .hero-button {
     width: 114px;
     height: 114px;
@@ -300,6 +306,7 @@
     margin-left: 30px;
   }
   .fruit-second-card {
+    margin: 0;
     margin-bottom: 44px;
   }
   .hero-list {
@@ -311,7 +318,7 @@
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
   .cont-hero {
-    background-image: url(../img/tabletgirl@1x.png);
+    background-image: url(../img/tabletgirl@2x.png);
   }
 }
 
@@ -342,31 +349,37 @@
     margin-bottom: 483px;
   }
   .hero-text {
-    width: 222px;
+    width: 221px;
     height: 108px;
   }
   .sorting {
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
     gap: 568px;
-    margin-bottom: 150px;
     z-index: 100;
     top: 336px;
   }
   .first-group {
     position: absolute;
+    left: 62px;
+    top: 408px;
     z-index: 101;
-    top: 60px;
-    margin-right: 900px;
   }
   .second-group {
     position: absolute;
+    right: 62px;
+    top: 336px;
     z-index: 100;
-    top: -5px;
-    margin-left: 940px;
+  }
+
+  .fruit-first-card {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .fruit-second-card {
+    margin-bottom: 44px;
   }
   .hero-list {
     width: 266px;
@@ -374,11 +387,17 @@
     flex-wrap: wrap;
     gap: 8px 8px;
   }
+  .hero-button {
+    margin-bottom: 0;
+  }
+  .cont-hero {
+    padding-bottom: 238px;
+  }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
   (min-resolution: 192dpi) and (min-width: 1280px),
   (min-resolution: 2dppx) and (min-width: 1280px) {
   .cont-hero {
-    background-image: url(../img/desctopgirl@1x.png);
+    background-image: url(../img/desctopgirl@2x.png);
   }
 }

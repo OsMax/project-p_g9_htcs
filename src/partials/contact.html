@@ -5,18 +5,39 @@
       Fresh Harvest Box has got you covered
     </h2>
     <ul class="contacts-img">
-      <li>
-        <img
-          class="content-img melon"
-          srcset="
-            ./img/contacts/melon335w.jpg    1x,
-            ./img/contacts/melon670w@2x.jpg 2x
-          "
-          src="./img/contacts/melon335w.jpg"
-          alt="melon"
-        />
+      <li class="m1">
+        <picture>
+          <source
+            srcset="
+              ./img/contacts/melonDesc@2x.jpg 2x,
+              ./img/contacts/melonDesc.jpg    1x
+            "
+            media="(min-width: 1280px)"
+            sizes="792px"
+            type=""
+          />
+          <source
+            srcset="
+              ./img/contacts/melonTab@2x.jpg 2x,
+              ./img/contacts/melonTab.jpg    1x
+            "
+            media="(min-width: 768px)"
+            sizes="344px"
+            type=""
+          />
+          <source
+            srcset="
+              ./img/contacts/melonTab@2x.jpg 2x,
+              ./img/contacts/melonTab.jpg    1x
+            "
+            media="(max-width: 767px)"
+            sizes="335px"
+            type=""
+          />
+          <img src="./img/contacts/melon.jpg" alt="" />
+        </picture>
       </li>
-      <li>
+      <li class="m2">
         <img
           class="content-img bilberry"
           srcset="
@@ -38,9 +59,12 @@
       <form class="contacts-form" name="contacts-form">
         <input
           class="contacts-email"
+          required
+          pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
           type="email"
           name="user-email"
           placeholder="Enter email..."
+          autocomplete="off"
         />
         <button class="contacts-btn" type="button" id="send-open">
           <span class="contacts-btn-text"> Send</span>

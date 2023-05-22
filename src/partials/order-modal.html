@@ -15,8 +15,8 @@
       <ul class="order-baskets">
         <li class="order-item">
           <label class="order-product">
-            <span class="order-name-basket">Strawberry Basket</span>
-            <span class="order-description">Plant</span>
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
             <input
               class="order-input-check"
               type="checkbox"
@@ -37,8 +37,8 @@
         </li>
         <li class="order-item">
           <label class="order-product">
-            <span class="order-name-basket">Strawberry Basket</span>
-            <span class="order-description">Plant</span>
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
             <input
               class="order-input-check"
               type="checkbox"
@@ -59,8 +59,8 @@
         </li>
         <li class="order-item">
           <label class="order-product">
-            <span class="order-name-basket">Strawberry Basket</span>
-            <span class="order-description">Plant</span>
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
             <input
               class="order-input-check"
               type="checkbox"
@@ -88,7 +88,8 @@
             class="order-info-input"
             type="text"
             name="username"
-            required pattern="^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$"
+            required
+            pattern="^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$"
             title="Username must be two words separated by space."
             placeholder="Enter full name..."
           />
@@ -98,7 +99,8 @@
             class="order-info-input"
             type="email"
             name="email"
-            required pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
+            required
+            pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
             title="Email entered incorrectly!"
             placeholder="Enter email..."
           />
@@ -108,7 +110,8 @@
             class="order-info-input"
             type="text"
             name="card"
-            required pattern="[0-9]{13,16}"
+            required
+            pattern="[0-9]{13,16}"
             title="Card number must contain 13 to 16 digits!"
             placeholder="Enter card.."
           />
@@ -131,35 +134,31 @@
   </div>
 
   <!-- модальне вікно send  is-hidden-->
-  <div class="send is-hidden" id="modal-send" >
-    
+  <div class="send is-hidden" id="modal-send">
     <!-- кнопка-крестик -->
     <button class="send-btn-close" id="send-close">
       <svg class="icon-send-modal" width="24" height="24">
         <use href="/order-img/order-sprite.svg#icon-close-white"></use>
-      </svg> 
-      </button>
+      </svg>
+    </button>
 
-      <img
-         class="send-img"
-         srcset="
-           /order-img/raspberries@1px.png  1x,
-           ./order-img/raspberries@2px.png 2x
-         "
-         src="/order-img/raspberries@1px.png"
-         alt="basket with strawberries"
-            />
-     
+    <img
+      class="send-img"
+      srcset="
+        /order-img/raspberries@1px.png  1x,
+        ./order-img/raspberries@2px.png 2x
+      "
+      src="/order-img/raspberries@1px.png"
+      alt="basket with strawberries"
+    />
 
-    <span class="send-header">
-    <h3 >THANK YOU</h3>
-    </span>
+    <h3 class="send-header">THANK YOU</h3>
 
-     <span class="send-text">Thank you for your order! Our team is 
-      preparing your box with fresh, delicious fruits
-       and vegetables, and we'll deliver it straight 
-       to your doorstep. We appreciate your business 
-       and look forward to providing you with the best
-        possible experience!</span>
-</div>
+    <p class="send-text">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
 </div>

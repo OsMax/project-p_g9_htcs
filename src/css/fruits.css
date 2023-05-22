@@ -2,11 +2,10 @@ p {
   margin: 0 auto;
 }
 .fruits-section .container {
-  padding-bottom: 80px;
+  padding-bottom: 133px;
 }
 body {
   font-family: 'DM Sans';
-  background-color: #ae1332;
 }
 ul {
   padding: 0;
@@ -93,6 +92,7 @@ img {
   margin-bottom: 7px;
 }
 .content {
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -135,7 +135,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .fruits-section .container {
-    padding-bottom: 144px;
+    padding-bottom: 223px;
   }
   .container {
     max-width: 768px;
@@ -152,7 +152,7 @@ img {
   .card {
     border-radius: 20px;
     padding: 64px 24px 24px 24px;
-    width: calc(100% / 2 - 8px);
+    width: calc((100% - 16px) / 2);
   }
   .card-7 {
     display: block;
@@ -164,7 +164,7 @@ img {
 /* Загальні стилі для десктопу */
 @media screen and (min-width: 1280px) {
   .fruits-section .container {
-    padding-bottom: 150px;
+    padding-bottom: 239px;
   }
   .container {
     max-width: 1280px;
@@ -194,14 +194,16 @@ img {
   .card {
     border-radius: 20px;
     padding: 64px 24px 24px 24px;
-    width: calc(100% / 3 - 16px);
+    width: calc((100% - 48px) / 3);
   }
   .card-9 {
     display: block;
   }
 }
-S .image-wrapper {
-  position: relative;
+.image-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 295px;
 }
 
 .flip-card {

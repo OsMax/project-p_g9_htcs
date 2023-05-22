@@ -1,43 +1,70 @@
-/* Центрування заголовку і параграфу */
 p {
   margin: 0 auto;
 }
+.fruits-section .container {
+  padding-bottom: 80px;
+}
+body {
+  font-family: 'DM Sans';
+  background-color: #ae1332;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
 img {
   width: 100%;
+  display: block;
 }
-/* Кольори всіх карток */
 .card-1 {
   background-color: #f8766b;
+  position: relative;
+  perspective: 1000px;
 }
 .card-2 {
   background-color: #edd251;
+  position: relative;
+  perspective: 1000px;
 }
 .card-3 {
   background-color: #9dc262;
+  position: relative;
+  perspective: 1000px;
 }
 .card-4 {
   background-color: #bfd663;
+  position: relative;
+  perspective: 1000px;
 }
 .card-5 {
   background-color: #e93f29;
+  position: relative;
+  perspective: 1000px;
 }
 .card-6 {
   background-color: #db4f4b;
+  position: relative;
+  perspective: 1000px;
 }
 .card-7 {
   background-color: #9b5366;
+  position: relative;
+  perspective: 1000px;
   display: none;
 }
 .card-8 {
   background-color: #f47f4c;
+  position: relative;
+  perspective: 1000px;
   display: none;
 }
 .card-9 {
   background-color: #98b37e;
+  position: relative;
+  perspective: 1000px;
   display: none;
 }
 
-/* Картки */
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +76,9 @@ img {
   padding: 64px 24px 24px 24px;
 }
 .price {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
   background: #ffffff;
   border-radius: 20px;
   padding: 15px;
@@ -56,7 +86,7 @@ img {
 .title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 1.19;
+  line-height: 38px;
   align-items: center;
   letter-spacing: -0.04em;
   color: #ffffff;
@@ -65,7 +95,7 @@ img {
 .content {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 24px;
   align-items: center;
   letter-spacing: -0.02em;
   color: #ffffff;
@@ -73,7 +103,7 @@ img {
 .price {
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 24px;
   display: inline-block;
   align-items: center;
   letter-spacing: -0.04em;
@@ -83,7 +113,7 @@ img {
   margin-bottom: 14px;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.1;
+  line-height: 44px;
   align-items: center;
   text-align: center;
   letter-spacing: -0.04em;
@@ -95,7 +125,7 @@ img {
   margin-bottom: 44px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 18px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -103,10 +133,9 @@ img {
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
-/*Загальні стилі для Таблетки */
 @media screen and (min-width: 768px) {
-  .fruits-header-content {
-    max-width: 547px;
+  .fruits-section .container {
+    padding-bottom: 144px;
   }
   .container {
     max-width: 768px;
@@ -125,30 +154,30 @@ img {
     padding: 64px 24px 24px 24px;
     width: calc(100% / 2 - 8px);
   }
-  /* Відображення карток */
   .card-7 {
-    background-color: #9b5366;
     display: block;
   }
   .card-8 {
-    background-color: #f47f4c;
     display: block;
   }
 }
-/* Загальні стилі для Десктопу */
+/* Загальні стилі для десктопу */
 @media screen and (min-width: 1280px) {
+  .fruits-section .container {
+    padding-bottom: 150px;
+  }
   .container {
     max-width: 1280px;
     margin: 0 auto;
     padding-left: 33px;
     padding-right: 33px;
   }
-  .header-content {
-    width: 547px;
+  .fruits-header-content {
+    max-width: 547px;
     margin-bottom: 44px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 18px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -167,17 +196,55 @@ img {
     padding: 64px 24px 24px 24px;
     width: calc(100% / 3 - 16px);
   }
-  /* Відображення карток */
-  .card-7 {
-    background-color: #9b5366;
-    display: block;
-  }
-  .card-8 {
-    background-color: #f47f4c;
-    display: block;
-  }
   .card-9 {
-    background-color: #98b37e;
     display: block;
   }
+}
+S .image-wrapper {
+  position: relative;
+}
+
+.flip-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 50px;
+}
+
+.back-text {
+  max-width: 300px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.card:hover .flip-card {
+  transform: rotateY(180deg);
+}
+.card-hid {
+  display: none;
 }

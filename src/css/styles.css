@@ -49,18 +49,15 @@ body {
   height: 70px;
   border-radius: 50%;
   opacity: 0.5;
-}
-.go-top.show {
-  display: block;
-}
-.go-top-link {
-  display: block;
-  width: 100%;
-  height: 100%;
+
   background-image: url('../img/to-up.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  cursor: pointer;
+}
+.go-top.show {
+  display: block;
 }
 
 .main .container {

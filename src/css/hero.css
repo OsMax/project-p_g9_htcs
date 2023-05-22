@@ -15,6 +15,21 @@
   margin-right: auto;
   background-image: url(../img/mobgirl@1x.png);
   background-position-y: 50px;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+  border-image-slice: 3;
+}
+@media (min-device-pixel-rario: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .cont-hero {
+    background-image: url(../img/mobgirl@1x.png);
+  }
 }
 .hero-text-h1 {
   /* position: relative;
@@ -282,6 +297,13 @@
     justify-content: end;
   }
 }
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .cont-hero {
+    background-image: url(../img/tabletgirl@1x.png);
+  }
+}
 
 /**
   |============================
@@ -319,9 +341,35 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    justify-content: space-between;
     gap: 568px;
     margin-bottom: 150px;
     z-index: 100;
     top: 336px;
+  }
+  .first-group {
+    position: absolute;
+    z-index: 101;
+    top: 60px;
+    margin-right: 900px;
+  }
+  .second-group {
+    position: absolute;
+    z-index: 100;
+    top: -5px;
+    margin-left: 940px;
+  }
+
+  .hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px) {
+  .cont-hero {
+    background-image: url(../img/desctopgirl@1x.png);
   }
 }

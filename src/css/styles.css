@@ -29,7 +29,7 @@
   --follow-in-line: 1;
   --fruits-in-line: 1;
 }
-body{
+body {
   padding-top: 50px;
 }
 /* Загальний стилі для КОНТЕЙНЕРІВ (мобільна версія) */
@@ -38,6 +38,29 @@ body{
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+.go-top {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.go-top.show {
+  display: block;
+}
+.go-top-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/to-up.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .main .container {

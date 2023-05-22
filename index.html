@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project-p_g9_htcs/assets/index-12073b60.js"></script>
-    <link rel="stylesheet" href="/project-p_g9_htcs/assets/index-d17af77f.css">
+    <link rel="stylesheet" href="/project-p_g9_htcs/assets/index-9f823cda.css">
   </head>
   <body id="to-top">
     <header class="header">
@@ -355,8 +355,8 @@
           <div class="flip-card">
             <div class="flip-card-front">
               <img 
-              srcset="/project-p_g9_htcs/assets/peach@1x-d9352160.png 1x, /project-p_g9_htcs/assets/peach@2x-98432772.png "
-              src="./img/fruits/peach@1x.png 2x" 
+              srcset="/project-p_g9_htcs/assets/peach@1x-d9352160.png 1x, /project-p_g9_htcs/assets/peach@2x-98432772.png 2x"
+              src="/project-p_g9_htcs/assets/peach@1x-d9352160.png" 
               alt="peach" />
             </div>
             <div class="flip-card-back">
@@ -452,15 +452,30 @@
       Fresh Harvest Box has got you covered
     </h2>
     <ul class="contacts-img">
-      <li>
-        <img
-          class="content-img melon"
-          srcset="/project-p_g9_htcs/assets/melon335w-70b3a539.jpg 1x, /project-p_g9_htcs/assets/melon670w@2x-28a632db.jpg 2x"
-          src="/project-p_g9_htcs/assets/melon335w-70b3a539.jpg"
-          alt="melon"
-        />
+      <li class="m1">
+        <picture>
+          <source
+            srcset="/project-p_g9_htcs/assets/melonDesc@2x-b76a8516.jpg 2x, /project-p_g9_htcs/assets/melonDesc-f955a0d3.jpg 1x"
+            media="(min-width: 1280px)"
+            sizes="792px"
+            type=""
+          />
+          <source
+            srcset="/project-p_g9_htcs/assets/melonTab@2x-c889214f.jpg 2x, /project-p_g9_htcs/assets/melonTab-209c9d95.jpg 1x"
+            media="(min-width: 768px)"
+            sizes="344px"
+            type=""
+          />
+          <source
+            srcset="/project-p_g9_htcs/assets/melonTab@2x-c889214f.jpg 2x, /project-p_g9_htcs/assets/melonTab-209c9d95.jpg 1x"
+            media="(max-width: 767px)"
+            sizes="335px"
+            type=""
+          />
+          <img src="/project-p_g9_htcs/assets/melon-d73c9e5f.jpg" alt="" />
+        </picture>
       </li>
-      <li>
+      <li class="m2">
         <img
           class="content-img bilberry"
           srcset="/project-p_g9_htcs/assets/bilberry@1x-34182ba4.jpg 1x, /project-p_g9_htcs/assets/bilberry@2x-8f06bcf6.jpg 2x"
@@ -479,9 +494,12 @@
       <form class="contacts-form" name="contacts-form">
         <input
           class="contacts-email"
+          required
+          pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
           type="email"
           name="user-email"
           placeholder="Enter email..."
+          autocomplete="off"
         />
         <button class="contacts-btn" type="button" id="send-open">
           <span class="contacts-btn-text"> Send</span>
@@ -595,8 +613,8 @@
       <ul class="order-baskets">
         <li class="order-item">
           <label class="order-product">
-            <span class="order-name-basket">Strawberry Basket</span>
-            <span class="order-description">Plant</span>
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
             <input
               class="order-input-check"
               type="checkbox"
@@ -614,8 +632,8 @@
         </li>
         <li class="order-item">
           <label class="order-product">
-            <span class="order-name-basket">Strawberry Basket</span>
-            <span class="order-description">Plant</span>
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
             <input
               class="order-input-check"
               type="checkbox"
@@ -633,8 +651,8 @@
         </li>
         <li class="order-item">
           <label class="order-product">
-            <span class="order-name-basket">Strawberry Basket</span>
-            <span class="order-description">Plant</span>
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
             <input
               class="order-input-check"
               type="checkbox"
@@ -659,7 +677,8 @@
             class="order-info-input"
             type="text"
             name="username"
-            required pattern="^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$"
+            required
+            pattern="^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$"
             title="Username must be two words separated by space."
             placeholder="Enter full name..."
           />
@@ -669,7 +688,8 @@
             class="order-info-input"
             type="email"
             name="email"
-            required pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
+            required
+            pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
             title="Email entered incorrectly!"
             placeholder="Enter email..."
           />
@@ -679,7 +699,8 @@
             class="order-info-input"
             type="text"
             name="card"
-            required pattern="[0-9]{13,16}"
+            required
+            pattern="[0-9]{13,16}"
             title="Card number must contain 13 to 16 digits!"
             placeholder="Enter card.."
           />
@@ -702,35 +723,32 @@
   </div>
 
   <!-- модальне вікно send  is-hidden-->
-  <div class="send is-hidden" id="modal-send" >
-    
+  <div class="send is-hidden" id="modal-send">
     <!-- кнопка-крестик -->
     <button class="send-btn-close" id="send-close">
       <svg class="icon-send-modal" width="24" height="24">
         <use href="/project-p_g9_htcs/assets/order-sprite-68adf80d.svg#icon-close-white"></use>
-      </svg> 
-      </button>
+      </svg>
+    </button>
 
-      <img
-         class="send-img"
-         srcset="/project-p_g9_htcs/assets/raspberries@1px-f8660b4c.png 1x, /project-p_g9_htcs/assets/raspberries@2px-081fa7a7.png 2x"
-         src="/project-p_g9_htcs/assets/raspberries@1px-f8660b4c.png"
-         alt="basket with strawberries"
-            />
-     
+    <img
+      class="send-img"
+      srcset="/project-p_g9_htcs/assets/raspberries@1px-f8660b4c.png 1x, /project-p_g9_htcs/assets/raspberries@2px-081fa7a7.png 2x"
+      src="/project-p_g9_htcs/assets/raspberries@1px-f8660b4c.png"
+      alt="basket with strawberries"
+    />
 
-    <span class="send-header">
-    <h3 >THANK YOU</h3>
-    </span>
+    <h3 class="send-header">THANK YOU</h3>
 
-     <span class="send-text">Thank you for your order! Our team is 
-      preparing your box with fresh, delicious fruits
-       and vegetables, and we'll deliver it straight 
-       to your doorstep. We appreciate your business 
-       and look forward to providing you with the best
-        possible experience!</span>
+    <p class="send-text">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
 </div>
-</div>
+
 
     <!-- Loads the specified .html file -->
     <div class="go-top"></div>

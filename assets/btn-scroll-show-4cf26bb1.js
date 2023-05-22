@@ -1,1 +1,0 @@
-const s={btn:document.querySelector(".go-top"),show(){this.btn.classList.add("show")},hide(){this.btn.classList.remove("show")},addEventListener(){window.addEventListener("scroll",()=>{(window.scrollY||document.documentElement.scrollTop)>400?this.show():this.hide()})}};s.addEventListener();

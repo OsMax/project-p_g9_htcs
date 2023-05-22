@@ -6,21 +6,21 @@
 
 /*     HEADER STYLES        */
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: var(--color-white);
   border-bottom: 1px solid var(--color-white);
-  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-box {
-  position: fixed;
-
-  z-index: 999;
-  width: 100vw;
-
   /* Calc auto shift header */
   left: calc((100vw - 100%) / 2);
   right: calc((100vw - 100%) / 2);
 
-  background-color: var(--color-white);
   display: flex;
   padding: 13px 0;
 }
@@ -42,7 +42,6 @@
     display: flex;
   }
 }
-
 
 .header-nav {
   display: flex;
@@ -85,7 +84,6 @@
 
 .header-nav-link:hover,
 .header-nav-link:focus {
-  
   animation-name: rainbow1;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -153,12 +151,12 @@
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.04em;
-  
-    color: #AE1332;
-  
+
+    color: #ae1332;
+
     display: flex;
     align-items: center;
-    
+
     gap: 16px;
   }
 }
@@ -170,9 +168,9 @@
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.04em;
-  
-    color: #AE1332;
-  
+
+    color: #ae1332;
+
     display: flex;
     align-items: center;
     gap: 20px;
@@ -185,7 +183,6 @@
   gap: 8px;
   padding: 0;
 }
-
 
 @media screen and (min-width: 375px) {
   .page-logo-link {
@@ -217,14 +214,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-    
+
   width: 16px;
   height: 16px;
 }
 
 .page-logo-icon {
-
-  fill: #AE1332;
+  fill: #ae1332;
 }
 
 .page-name {
@@ -234,7 +230,7 @@
   font-size: 14px;
   line-height: 1.28;
 
-  color: #AE1332;
+  color: #ae1332;
   text-transform: uppercase;
   text-align: center;
 }
@@ -275,7 +271,7 @@
 }
 
 .basket-icon {
-  fill: #AE1332;
+  fill: #ae1332;
 }
 
 .nav-link:hover,
@@ -348,16 +344,17 @@
 }
 
 .close-mobile-menu {
-   display: none;
-   right: calc(100vw - 100%);
-   width: 24px;
-   height: 24px;
-   background-color: transparent;
-   border: 1px solid var(--topic-button-border);
-   cursor: pointer;
-       
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+  display: none;
+  right: calc(100vw - 100%);
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 1px solid var(--topic-button-border);
+  cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .menu-toggle {
   min-height: 24px;

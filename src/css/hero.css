@@ -3,41 +3,42 @@
   | СТИЛІ ХІРОУ
   |============================
 */
-.hero {
-  background-color: var(--color-red);
+.cont-hero {
+  /* position: relative;
+  z-index: -2; */
   padding-top: 56px;
   padding-bottom: 80px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: 355px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/bananaplus@1x.png);
-  max-width: 1280px;
-  background-position-y: 108px;
+  background-image: url(../img/mobgirl@1x.png);
+  background-position-y: 50px;
+
+  /* border: 1px solid;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+  background: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  ); */
 }
-.girl-container {
-  position: relative;
-  top: -158px;
-  display: inline-block;
-  width: 486px;
-  height: 742px;
-  border: 1px solid #ffffff;
-  border-radius: 500px;
-  padding: 20px;
-}
-.girl {
-  width: 444px;
-  height: 702px;
-  background-image: url(../img/bggirlw@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: 500px;
+@media (min-device-pixel-rario: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .cont-hero {
+    background-image: url(../img/mobgirl@1x.png);
+  }
 }
 .hero-text-h1 {
-  position: relative;
-  z-index: 1;
+  /* max-width: 335px; */
   font-family: 'DM Sans';
   font-size: 28px;
   font-weight: 500;
@@ -45,13 +46,47 @@
   letter-spacing: -0.04em;
   text-align: center;
   color: var(--color-white);
-  /* max-width: 335px; */
-
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 386px;
 }
+/* .girl-container {
+  position: relative;
+  top: -62px;
+  display: inline-block;
+  width: 335px;
+  height: 509px;
+  border: 1px solid #ffffff;
+  border-radius: 500px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+} */
+/* .girl {
+  width: 311px;
+  height: 484px;
+  background-image: url(../img/newgirl@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+} */
 .hero-button {
   display: block;
   font-family: 'DM Sans';
@@ -72,7 +107,13 @@
   text-transform: uppercase;
   margin-bottom: 44px;
   transform: rotate(345deg);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.hero-button:focus,
+.hero-button:hover {
+  color: var(--color-green);
+}
+
 .hero-text {
   font-family: 'DM Sans';
   font-weight: 400;
@@ -205,20 +246,26 @@
   |============================
 */
 @media only screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-  .hero {
+  .cont-hero {
+    width: 100%;
     padding-top: 64px;
-    padding-bottom: 157px;
-    text-align: center;
+    padding-bottom: 137px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 704px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/tabletgirl@1x.png);
+    background-position-y: 45px;
   }
   .hero-text-h1 {
     width: 704px;
     height: 168px;
     font-size: 50px;
     line-height: 1.1;
+    margin-bottom: 513px;
   }
+
   .hero-button {
     width: 114px;
     height: 114px;
@@ -260,6 +307,13 @@
     justify-content: end;
   }
 }
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .cont-hero {
+    background-image: url(../img/tabletgirl@1x.png);
+  }
+}
 
 /**
   |============================
@@ -267,14 +321,17 @@
   |============================
 */
 @media only screen and (min-width: 1280px) {
-  .container {
-    padding-left: 62px;
-    padding-right: 45px;
-    width: 1280px;
-  }
-  .hero {
+  .cont-hero {
+    width: 100%;
     padding-top: 64px;
     padding-bottom: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 844px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/desctopgirl@1x.png);
+    background-position-y: 30px;
   }
   .hero-text-h1 {
     font-size: 64px;
@@ -282,6 +339,7 @@
     width: 898px;
     height: 198px;
     text-align: center;
+    margin-bottom: 483px;
   }
   .hero-text {
     width: 222px;
@@ -292,9 +350,35 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    justify-content: space-between;
     gap: 568px;
     margin-bottom: 150px;
     z-index: 100;
     top: 336px;
+  }
+  .first-group {
+    position: absolute;
+    z-index: 101;
+    top: 60px;
+    margin-right: 900px;
+  }
+  .second-group {
+    position: absolute;
+    z-index: 100;
+    top: -5px;
+    margin-left: 940px;
+  }
+  .hero-list {
+    width: 266px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px) {
+  .cont-hero {
+    background-image: url(../img/desctopgirl@1x.png);
   }
 }

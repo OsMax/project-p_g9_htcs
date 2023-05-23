@@ -34,5 +34,7 @@
   function closeMenu() {
     document.body.classList.remove('modal-open');
     mobileMenu.classList.remove('is-open');
+    openMenuBtn.classList.remove('is-open');
+    closeMenuBtn.classList.remove('is-open');
   }
 })();

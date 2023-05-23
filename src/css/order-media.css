@@ -24,6 +24,11 @@
     bottom: 14px;
   }
 
+  .text-order{  
+    top: 40px;
+}
+
+
   .order-item:nth-child(1) .order-img-basket {
     width: 133px;
     left: 34px;

@@ -15,11 +15,12 @@
     closeMenuBtn.classList.toggle('is-open');
   }
 
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+  window.matchMedia('(max-width: 767px)').addEventListener('change', e => {
     if (!e.matches) return;
     openMenuBtn.classList.remove('is-open');
+    closeMenuBtn.classList.remove('is-open');
   });
-  window.matchMedia('(max-width: 767px)').addEventListener('change', e => {
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     document.body.classList.remove('modal-open');

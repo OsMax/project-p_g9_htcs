@@ -19,6 +19,7 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     document.body.classList.remove('modal-open');
+    closeMenuBtn.classList.remove('is-open');
   });
 
   const howitworks = document.querySelector('.link-howitworks');

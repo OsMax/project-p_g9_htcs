@@ -12,7 +12,7 @@
     mobileMenu.classList.toggle('is-open');
     openMenuBtn.classList.toggle('is-open');
     changeHeaderNav.classList.toggle('is-open');
-    closeMenuBtn.classList.toggle('is-open'); 
+    closeMenuBtn.classList.toggle('is-open');
   }
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
@@ -20,4 +20,19 @@
     mobileMenu.classList.remove('is-open');
     document.body.classList.remove('modal-open');
   });
+
+  const howitworks = document.querySelector('.link-howitworks');
+  const fruits = document.querySelector('.link-fruits');
+  const contacts = document.querySelector('.link-contacts');
+  const basket = document.querySelector('.link-basket');
+
+  howitworks.addEventListener('click', closeMenu);
+  fruits.addEventListener('click', closeMenu);
+  contacts.addEventListener('click', closeMenu);
+  basket.addEventListener('click', closeMenu);
+
+  function closeMenu() {
+    document.body.classList.remove('modal-open');
+    mobileMenu.classList.remove('is-open');
+  }
 })();

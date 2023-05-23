@@ -28,6 +28,7 @@
 
   --follow-in-line: 1;
   --fruits-in-line: 1;
+  font-style: normal;
 }
 body {
   padding-top: 50px;
@@ -60,9 +61,8 @@ body {
   display: block;
 }
 
-.main .container {
+.main {
   background-color: #ae1332;
-  border: 1px solid #ae1332;
 }
 
 /* Загальні стилі для таблету */

@@ -112,7 +112,7 @@ img {
 .fruits-section-header {
   margin-bottom: 14px;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 44px;
   align-items: center;
   text-align: center;
@@ -142,6 +142,9 @@ img {
     margin: 0 auto;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .fruits-section-header {
+    font-size: 40px;
   }
   .card-set {
     display: flex;

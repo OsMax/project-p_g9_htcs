@@ -150,15 +150,29 @@
 /* картинки с корзинками */
 .order-item {
   position: relative;
-  padding-top: 40px;
-  padding-left: 20px;
+  /* padding-top: 40px;
+  padding-left: 20px; */
   margin-bottom: 12px;
+  height: 119px;
   width: calc(
     (100% - 104px * (var(--fruits-in-line) - 1)) / var(--fruits-in-line)
   );
 
+  .order-product{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
   height: 119px;
   border-radius: 20px;
+}
+
+.text-order{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  pointer-events: none;
 }
 
 .order-item:nth-child(1) {
@@ -205,6 +219,8 @@
   appearance: none;
 }
 
+
+
 .order-check {
   position: absolute;
   top: 14px;
@@ -225,17 +241,10 @@
   background-position: center;
 }
 
-.order-check:nth-child(1) {
-  background-color: #f8766b;
+.order-check{
+  background-color: transparent;
 }
 
-.order-check:nth-child(2) {
-  background-color: var(--color-yellow);
-}
-
-.order-check:nth-child(3) {
-  background-color: var(--color-green);
-}
 
 .order-img-basket {
   position: absolute;
@@ -256,6 +265,9 @@
   display: block;
   margin-bottom: 40px;
 }
+
+
+
 
 /* <!-- форма заполнения --> */
 .order-info-input {

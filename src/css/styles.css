@@ -65,7 +65,9 @@ body {
 .go-top.show {
   display: block;
 }
-
+.for-scroll {
+  scroll-margin-top: 60px;
+}
 .main {
   background-color: #ae1332;
 }

@@ -97,7 +97,8 @@
   .footer-nav-list {
     position: absolute;
     top: 84px;
-    left: 554px;
+    left: 623px;
+    margin: 0;
   }
 }
 

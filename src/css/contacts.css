@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.pic-in-cont {
+  width: 100%;
+}
+
 .contacts-email:invalid:not(:placeholder-shown) {
   outline: 1px solid red;
   border-color: red;

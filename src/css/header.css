@@ -22,7 +22,7 @@
   right: calc((100vw - 100%) / 2);
 
   display: flex;
-  padding: 13px 0;
+  max-height: 50px;
 }
 
 @media screen and (min-width: 375px) {
@@ -82,7 +82,9 @@
   justify-content: center;
 }
 .header-nav-link {
-  border: 1px solid var(--color-white);
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
 }
 
 .header-nav-link:hover,
@@ -96,43 +98,53 @@
 
 @keyframes rainbow1 {
   10% {
-    border-color: rgb(243, 56, 56);
+    border-bottom-color: rgb(243, 56, 56);
+    border-top-color: rgb(243, 56, 56);
   }
 
   20% {
-    border-color: orange;
+    border-bottom-color: orange;
+    border-top-color: orange;
   }
 
   30% {
-    border-color: yellow;
+    border-bottom-color: yellow;
+    border-top-color: yellow;
   }
 
   40% {
-    border-color: rgba(143, 241, 14, 0.959);
+    border-bottom-color: rgba(143, 241, 14, 0.959);
+    border-top-color: rgba(143, 241, 14, 0.959);
   }
 
   50% {
-    border-color: rgb(57, 161, 31);
+    border-bottom-color: rgb(57, 161, 31);
+    border-top-color: rgb(57, 161, 31);
   }
 
   60% {
-    border-color: rgb(59, 119, 209);
+    border-bottom-color: rgb(59, 119, 209);
+    border-top-color: rgb(59, 119, 209);
   }
 
   70% {
-    border-color: rgb(51, 51, 253);
+    border-bottom-color: rgb(51, 51, 253);
+    border-top-color: rgb(51, 51, 253);
   }
 
   80% {
-    border-color: rgb(124, 7, 179);
+    border-bottom-color: rgb(124, 7, 179);
+    border-top-color: rgb(124, 7, 179);
   }
 
   90% {
-    border-color: rgb(255, 0, 212);
+    border-bottom-color: rgb(255, 0, 212);
+    border-top-color: rgb(255, 0, 212);
   }
 
   100% {
-    border-color: rgb(224, 68, 68);
+    border-bottom-color: rgb(224, 68, 68);
+    border-top-color: rgb(224, 68, 68);
   }
 }
 
@@ -183,7 +195,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 0;
+  padding: 16px 0;
 }
 
 @media screen and (min-width: 375px) {
@@ -199,7 +211,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0;
+    /* padding: 0; */
   }
 }
 
@@ -208,7 +220,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0;
+    /* padding: 0; */
   }
 }
 
@@ -343,7 +355,7 @@
 
 .close-mobile-menu.is-open {
   display: flex;
-  width: 24px;
+  width: 30px;
   height: 24px;
   align-items: center;
   justify-content: center;

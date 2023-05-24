@@ -14,7 +14,7 @@
   background-size: 355px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/mobgirl@1x.png);
+  background-image: url(../img/mobgirl@1x.webp);
   background-position-y: 50px;
 
   /* border: 1px solid;
@@ -37,7 +37,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .cont-hero {
-      background-image: url(../img/mobgirl@2x.png);
+      background-image: url(../img/mobgirl@2x.webp);
     }
   }
 }
@@ -256,7 +256,7 @@
     background-size: 704px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../img/tabletgirl@1x.png);
+    background-image: url(../img/tabletgirl@1x.webp);
     background-position-y: 45px;
   }
   .hero-text-h1 {
@@ -318,7 +318,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .cont-hero {
-      background-image: url(../img/tabletgirl@2x.png);
+      background-image: url(../img/tabletgirl@2x.webp);
     }
   }
 }
@@ -338,7 +338,7 @@
     background-size: 844px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../img/desctopgirl@1x.png);
+    background-image: url(../img/desctopgirl@1x.webp);
     background-position-y: 30px;
   }
   .hero-text-h1 {
@@ -399,7 +399,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .cont-hero {
-      background-image: url(../img/desctopgirl@2x.png);
+      background-image: url(../img/desctopgirl@2x.webp);
     }
   }
 }

@@ -4,7 +4,7 @@
     width: 704px;
     padding: 40px;
 
-    background-image: url('/order-img/girl-banana@1px.png');
+    background-image: url('/order-img/girl-banana@1px.webp');
     background-repeat: no-repeat;
     background-position: right 0% bottom 0%;
   }
@@ -24,10 +24,9 @@
     bottom: 14px;
   }
 
-  .text-order{  
+  .text-order {
     top: 40px;
-}
-
+  }
 
   .order-item:nth-child(1) .order-img-basket {
     width: 133px;
@@ -107,6 +106,6 @@
     width: 891px;
     padding: 40px;
 
-    background-image: url('/order-img/girl-banana-big@1px.png');
+    background-image: url('/order-img/girl-banana-big@1px.webp');
   }
 }
